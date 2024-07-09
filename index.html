@@ -971,6 +971,16 @@
   </script>
 </amp-state>
 
+<amp-state id="images_cuba">
+  <script type="application/json">
+    {
+      "imageUrl_0": "/img/saborius/saborius_oregano_chillan_20kg.png",
+      "imageUrl_1": "/img/saborius/saborius_aji_picante_chillan_30kg.png"
+    }
+  </script>
+</amp-state>
+
+
 
 <amp-state id="proveedor">
   <script type="application/json">
@@ -1001,6 +1011,27 @@
 -->
 
               <div class="product-gallery">
+
+                <ul 
+                  [hidden]="product.selectedColor != 'yellow'">
+
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 0, selectedSlide: 0}})" 
+                      alt="Prueba"
+                      src="/img/saborius/saborius_platos.png"
+                      [src]="images_cuba.imageUrl_0"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForYellow == 0 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+
+	        </ul>
+              </div>
 
 
 
