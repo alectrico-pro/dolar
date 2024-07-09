@@ -1022,7 +1022,7 @@
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 0, selectedSlide: 0}})" 
                       alt="Prueba"
-                      src="/img/saborius/saborius_platos.png"
+                      src="/img/cuba/p1_sl0_olla_arrocera_hamilton.jpg"
                       [src]="images_cuba.imageUrl_0"
                       width="60"
                       height="40"
@@ -1033,10 +1033,26 @@
                      </amp-img>
                   </li>
 
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 1, selectedSlide: 1}})" 
+                      alt="Prueba"
+                      src="/img/cuba/p1_sl1_foton_electrico_saco.jpg"
+                      [src]="images_cuba.imageUrl_1"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForYellow == 1 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+
+
+
 	        </ul>
               </div>
 
-
+<!--
               <div class="product-gallery">
 
                 <ul 
@@ -1046,8 +1062,8 @@
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForYellow: 0, selectedSlide: 0}})"
 		      alt="Orégano Chilán 25 kG"
-		      src="/img/cuba/p1_sl1_olla_arrocera_hamilton.jpg"
-		      [src]="images_cuba.imageUrl_0"
+		      src="/img/saborius/saborius_platos.png"
+		      [src]="images.imageUrl_0"
                       width="60"
                       height="40"
                       class=""
@@ -1168,7 +1184,7 @@
                       role="button">
                      </amp-img>
                   </li>
-
+ -->
 
 
 
