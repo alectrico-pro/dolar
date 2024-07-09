@@ -1636,10 +1636,10 @@
                   height="500"
                   layout="responsive"
                   type="slides"
-                  [slide]="product.selectedSlideForYellow"
-                  on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForYellow: event.index}})"
+                  [slide]="product.selectedSlideForCuba"
+                  on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForCuba: event.index}})"
                   class="fadeIn"
-                  [hidden]="product.selectedColor != 'yellow'">
+                  [hidden]="product.selectedColor != 'cuba'">
 
 
 
@@ -1703,7 +1703,7 @@
                     </a>
 
                     <amp-img
-                      src="/img/cuba/p1_sl2_sarten_electrico_saco.jpg"
+                      src="/img/cuba/p1_sl2_sarten_electrico_premier.jpg"
                       [src]="images_cuba.imageUrl_2"
                       width="500"
                       height="500"
@@ -1722,6 +1722,7 @@
 
 
                 <amp-carousel id="yellow-apple-carousel"
+	          hidden
                   width="500"
                   height="500"
                   layout="responsive"
