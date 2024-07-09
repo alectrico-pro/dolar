@@ -1631,6 +1631,43 @@
 	      Carruseles
 	    -->
 
+              <amp-carousel id="yellow-apple-carousel"
+                  width="500"
+                  height="500"
+                  layout="responsive"
+                  type="slides"
+                  [slide]="product.selectedSlideForYellow"
+                  on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForYellow: event.index}})"
+                  class="fadeIn"
+                  [hidden]="product.selectedColor != 'yellow'">
+
+
+
+                  <div 
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                      [href] = "tel: 'proveedor.fono'"
+                      href = "tel:+5350475562">
+                      Llamar
+                    </a>
+
+                    <amp-img
+                      src="/img/cuba/olla_arrocera_hamilton.jpg"
+                      [src]="images_cuba.imageUrl_0"
+                      width="500"
+                      height="500"
+                      layout="responsive"
+                      on="tap:gallery-lightbox"
+                      role="button"
+                      tabindex="0">
+                    </amp-img>
+
+                  </div>
+               </amp-carousel>
+
+
 
                 <amp-carousel id="yellow-apple-carousel"
                   width="500"
