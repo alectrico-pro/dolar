@@ -1629,7 +1629,7 @@
 	      Carruseles
 	    -->
 
-              <amp-carousel id="yellow-apple-carousel"
+              <amp-carousel id="cuba-carousel"
                   width="500"
                   height="500"
                   layout="responsive"
@@ -2542,15 +2542,27 @@
                 </script>
               </amp-state>
 
+	      <!--
               <amp-state id="product"
                 src= "https://www.alectrico.cl/api/v1/electrico/productos/productos.json?_=RANDOM"  >
               </amp-state>
+	      -->
+
+		<amp-state id="product">
+		 <script type="application/json">
+		    {
+		      "selectedColor": "cuba"
+		    }
+		  </script>
+    		</amp-state>
+
 
 
 	      <p class="price-description"> Seleccionado:
-		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Saborius Orégano Chillán Saco de 25kg
+		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Olla Arrocera Hamilton
 		</span>
                 <span [text] ="product[product.selectedColor].ids[
+                   product.selectedColor == 'cuba'   ? product.selectedSlideForCuba :
                    product.selectedColor == 'yellow' ? product.selectedSlideForYellow :
                    product.selectedColor == 'blue'   ? product.selectedSlideForBlue   :
                    product.selectedColor == 'green'  ? product.selectedSlideForGreen  :
