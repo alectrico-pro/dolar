@@ -1014,7 +1014,8 @@
     {
       "imageUrl_0": "/img/cuba/p1_sl0_olla_arrocera_hamilton.jpg",
       "imageUrl_1": "/img/cuba/p1_sl1_fogon_electrico_saco.jpg",
-      "imageUrl_2": "/img/cuba/p1_sl2_sarten_electrico_premier.jpg"
+      "imageUrl_2": "/img/cuba/p1_sl2_sarten_electrico_premier.jpg",
+      "imageUrl_3": "/img/cuba/p2_sl3_aire_acondicionado_all_novu.jpg"
     }
   </script>
 </amp-state>
@@ -1024,7 +1025,8 @@
 <amp-state id="proveedor">
   <script type="application/json">
     {
-      "fono": "+5351528529"
+      "p1": { "fono": "+5351528529" },
+      "p2": { "fono": "+5350214525" }
     }
   </script>
 </amp-state>
@@ -1089,6 +1091,20 @@
                       height="40"
                       class=""
                       [class]="product.selectedSlideForCuba == 2 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForCuba: 3, selectedSlide: 3}})" 
+                      alt="Aire Acondicionado All nou"
+                      src="/img/cuba/p2_sl3_aire_acondicionado_all_nou.jpg"
+                      [src]="images_cuba.imageUrl_3"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForCuba == 3 ? 'selected fadeIn' : '' "
                       tabindex="0"
                       role="button">
                      </amp-img>
@@ -1684,7 +1700,7 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      [href] = "'tel:' + proveedor.fono"
+                      [href] = "'tel:' + proveedor.p1.fono"
                       href = "tel:+5351528529">
                       Llamar
 		    </a>
@@ -1715,7 +1731,7 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      [href] = "'tel:' + proveedor.fono"
+                      [href] = "'tel:' + proveedor.p1.fono"
                       href = "tel:+5351528529">
                       Llamar
                     </a>
@@ -1744,7 +1760,7 @@
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      [href] = "'tel:' + proveedor.fono"
+                      [href] = "'tel:' + proveedor.p1.fono"
                       href = "tel:+5351528529">
                       Llamar
                     </a>
@@ -1768,6 +1784,40 @@
                     </amp-img>
 
                   </div>
+
+
+                  <div
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                      [href] = "'tel:' + proveedor.p2.fono"
+                      href = "">
+                      Llamar
+                    </a>
+
+                <a class="comision-gallery-button">
+                 <span>
+                    Mensajería Incluída en la Ciudad
+                 </span>
+               </a>
+
+
+                    <amp-img
+                      src="/img/cuba/p2_sl3_aire_acondicionado_all_nou.jpg"
+                      [src]="images_cuba.imageUrl_3"
+                      width="500"
+                      height="500"
+                      layout="responsive"
+                      on="tap:gallery-lightbox"
+                      role="button"
+                      tabindex="0">
+                    </amp-img>
+
+                  </div>
+
+
+
 
 
 
