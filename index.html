@@ -910,7 +910,8 @@
 	</div>
         <h2 class="m1">Gestores Whappy</h2>
 	<h3 class="m1">Ventas sin Complejos!</h3>
-	<amp-script layout="fixed-height" script="local-storage-script" height="110" class="sample">
+
+<amp-script layout="fixed-height" script="local-storage-script" height="110" class="sample">
   <div class='m1'>
     <span>Current username: </span>
     <b id="username-display"></b>
@@ -921,6 +922,8 @@
   </div>
   <button id="username-submit">Submit</button>
 </amp-script>
+
+
 <script id="local-storage-script" type="text/plain" target="amp-script">
   const submit = document.getElementById('username-submit');
   const input = document.getElementById('username-input');
