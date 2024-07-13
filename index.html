@@ -588,6 +588,14 @@
       bottom: 0;
     }
 
+    .nombre-gallery-button {
+      z-index: 1;
+      position: absolute;
+      right: 10;
+      bottom: 10;
+    }
+
+
 
 
     #abe-preview{background:#eee}
@@ -1019,7 +1027,11 @@
       "precio_0": "22,500 CUP",
       "precio_1": "16,000 CUP",
       "precio_2": "22,500 CUP",
-      "precio_3": "450 USD"
+      "precio_3": "450 USD",
+      "nombre_0": "Olla Arrocera Hamilton",
+      "nombre_1": "Fogón Eléctrico Saco",
+      "nombre_2": "Sartén Eléctrico Premier",
+      "nombre_3": "Aire Acondicionado All Novu"
     }
   </script>
 </amp-state>
@@ -1712,19 +1724,25 @@
                       Llamar
 		    </a>
 		    
-
+<!--
                     <p class="ampstart-btn caps m2 comision-gallery-button"
                        [text] = "cuba.precio_0">
                       Llamar
                     </p>
 
-		    <!--
                 <a class="comision-gallery-button">
                  <span>
 	             Mensajería Incluída en la Ciudad
                  </span>
                </a>
 		    -->
+                <a class="nombre-gallery-button">
+                 <span [text]="cuba.nombre_0">
+                     Nombre
+                 </span>
+               </a>
+
+
                     <amp-img
                       src="/img/cuba/p1_sl0_olla_arrocera_hamilton.jpg"
                       [src]="cuba.imageUrl_0"
@@ -1750,13 +1768,12 @@
                       Llamar
                     </a>
 
-
+<!--
                     <p class="ampstart-btn caps m2 comision-gallery-button"
                        [text] = "cuba.precio_1">
                       Llamar
                     </p>
 
-		  <!--
                 <a class="comision-gallery-button">
                  <span>
                     Mensajería Incluída en la Ciudad
