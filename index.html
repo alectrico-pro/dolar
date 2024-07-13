@@ -4524,6 +4524,37 @@
       </amp-analytics>
     </div>
 
+<amp-state id="currencyFilter" src="https://api.exchangeratesapi.io/latest"></amp-state>
+<amp-state id="defState">
+  <script type="application/json">
+    {
+      "currencyRate": 1,
+      "currencyDecimal": 2,
+      "currencyCode": "EUR"
+    }
+  </script>
+</amp-state>
+<select on="change:AMP.setState({
+              defState: {
+                currencyRate: event.value == 'EUR' ? 1 : currencyFilter.rates[event.value], 
+                currencyCode: event.value
+              }
+            })">
+  <option value="CAD">CAD</option>
+  <option value="EUR" selected>EUR</option>
+  <option value="HKD">HKD</option>
+  <option value="ISK">ISK</option>
+  <option value="USD">USD</option>
+  <option value="GBP">GBP</option>
+  <option value="RUB">RUB</option>
+  <option value="INR">INR</option>
+</select>
+  <h3>Banana</h3>
+  <div>
+    <span [text]="defState.currencyCode">EUR</span>
+    <span [text]="(2*defState.currencyRate).toFixed(defState.currencyDecimal)">2.00</span>
+  </div>  
+  <amp-img src="https://cdn.glitch.com/cbcdd9ba-70f9-4d53-a19d-486e4b70f73f%2F440px-Cavendish_Banana_DS.jpg?v=1578089065672" height="112" width="112" layout="fixed" title="banana"></amp-img>
 
 
   </body>
