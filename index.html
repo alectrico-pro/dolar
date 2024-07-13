@@ -1748,19 +1748,22 @@
                   class="fadeIn"
                   [hidden]="product.selectedColor != 'cuba'">
 
-    <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.2" layout="nodisplay">
-    </amp-position-observer>
+                  <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.1" layout="nodisplay">
+                  </amp-position-observer>
 
                   <div 
                     role="button"
                     tabindex="0">
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
-                      [href] = "'tel:' + proveedor.p1.fono"
+		     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p1.fono + '&text=Hola podemos hablar sobre ' 
+			     + cuba.nombre_0"
                       href = "tel:+5351528529">
                       Llamar
 		    </a>
-		    
+	
+
+
                     <p class="ampstart-btn caps m2 comision-gallery-button"
                        [text] = "cuba.precio_0">
                       Llamar
