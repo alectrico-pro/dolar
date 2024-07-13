@@ -1009,16 +1009,22 @@
 </amp-state>
 
 <!-- p: proveedor sl:slide-->
-<amp-state id="images_cuba">
+<amp-state id="cuba">
   <script type="application/json">
     {
       "imageUrl_0": "/img/cuba/p1_sl0_olla_arrocera_hamilton.jpg",
       "imageUrl_1": "/img/cuba/p1_sl1_fogon_electrico_saco.jpg",
       "imageUrl_2": "/img/cuba/p1_sl2_sarten_electrico_premier.jpg",
-      "imageUrl_3": "/img/cuba/p2_sl3_aire_acondicionado_all_novu.jpg"
+      "imageUrl_3": "/img/cuba/p2_sl3_aire_acondicionado_all_novu.jpg",
+      "precio_0": "22,500 CUP",
+      "precio_1": "16,000 CUP",
+      "precio_2": "22,500 CUP",
+      "precio_3": "450 USD"
     }
   </script>
 </amp-state>
+
+
 
 
 
@@ -1059,7 +1065,7 @@
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForCuba: 0, selectedSlide: 0}})" 
                       alt="Olla Arrocera Hamilton"
                       src="/img/cuba/p1_sl0_olla_arrocera_hamilton.jpg"
-                      [src]="images_cuba.imageUrl_0"
+                      [src]="cuba.imageUrl_0"
                       width="60"
                       height="40"
                       class=""
@@ -1073,7 +1079,7 @@
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForCuba: 1, selectedSlide: 1}})" 
                       alt="Fogón Eléctrico Saco"
                       src="/img/cuba/p1_sl1_fogon_electrico_saco.jpg"
-                      [src]="images_cuba.imageUrl_1"
+                      [src]="cuba.imageUrl_1"
                       width="60"
                       height="40"
                       class=""
@@ -1086,7 +1092,7 @@
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForCuba: 2, selectedSlide: 2}})" 
                       alt="Sartén Eléctrico Premier"
                       src="/img/cuba/p1_sl2_sarten_electrico_premier.jpg"
-                      [src]="images_cuba.imageUrl_2"
+                      [src]="cuba.imageUrl_2"
                       width="60"
                       height="40"
                       class=""
@@ -1100,7 +1106,7 @@
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForCuba: 3, selectedSlide: 3}})" 
                       alt="Aire Acondicionado All novu"
                       src="/img/cuba/p2_sl3_aire_acondicionado_all_novu.jpg"
-                      [src]="images_cuba.imageUrl_3"
+                      [src]="cuba.imageUrl_3"
                       width="60"
                       height="40"
                       class=""
@@ -1713,7 +1719,7 @@
 
                     <amp-img
                       src="/img/cuba/p1_sl0_olla_arrocera_hamilton.jpg"
-                      [src]="images_cuba.imageUrl_0"
+                      [src]="cuba.imageUrl_0"
                       width="500"
                       height="500"
                       layout="responsive"
@@ -1744,7 +1750,7 @@
 
                     <amp-img
                       src="/img/cuba/p1_sl1_fogon_electrico_saco.jpg"
-                      [src]="images_cuba.imageUrl_1"
+                      [src]="cuba.imageUrl_1"
                       width="500"
                       height="500"
                       layout="responsive"
@@ -1774,7 +1780,7 @@
 
                     <amp-img
                       src="/img/cuba/p1_sl2_sarten_electrico_premier.jpg"
-                      [src]="images_cuba.imageUrl_2"
+                      [src]="cuba.imageUrl_2"
                       width="500"
                       height="500"
                       layout="responsive"
@@ -1805,7 +1811,7 @@
 
                     <amp-img
                       src="/img/cuba/p2_sl3_aire_acondicionado_all_novu.jpg"
-                      [src]="images_cuba.imageUrl_3"
+                      [src]="cuba.imageUrl_3"
                       width="500"
                       height="500"
                       layout="responsive"
