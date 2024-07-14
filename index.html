@@ -120,7 +120,6 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
-
     <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
 
     <link rel="canonical" href="https://whappy.store/">
@@ -4626,6 +4625,26 @@
 	</script>
       </amp-analytics>
     </div>
+
+<amp-animation id="parallaxTransition" layout="nodisplay">
+  <script type="application/json">
+    {
+      "duration": "1",
+      "fill": "both",
+      "direction": "reverse",
+      "animations": [
+        {
+          "selector": "#parallaxImage",
+          "keyframes": [
+            { "transform": "translateY(-30%)" }
+          ]
+        }
+      ]
+    }
+  </script>
+</amp-animation>
+
+
 <div class="parallax-image-window">
 
   <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay">
