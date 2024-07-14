@@ -969,6 +969,25 @@
 </div>
 
 
+<amp-animation id="spinAnimation" layout="nodisplay">
+  <script type="application/json">
+    {
+      "duration": "1",
+      "fill": "both",
+      "direction": "reverse",
+      "animations": [
+        {
+          "selector": "#fidgetSpinnerImage",
+          "keyframes": [
+            { "transform": "rotate(360deg)" }
+          ]
+        }
+      ]
+    }
+  </script>
+</amp-animation>
+
+
 	<div class="m1">
           <amp-social-share type="facebook" width="30" height="22" data-param-app_id="860581905818440"></amp-social-share>
 	  <amp-social-share type="email" width="30" height="22"></amp-social-share>
