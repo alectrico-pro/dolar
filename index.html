@@ -812,6 +812,54 @@
     }
 
 
+
+
+/*
+   * Fidget Spinner styles
+   */
+  .fidget-spinner-scene {
+    margin: 10px 20%;
+  }
+
+  /*
+   * Card transition styles
+   */
+  .card {
+    margin: 10%;
+    position: relative;
+  }
+  .card-title {
+    padding: 5%;
+    padding-right: 40%;
+    font-size: 50%;
+    font-weight: bold;
+    color: #FAFAFA;
+    transform: translateX(-100%);
+  }
+
+  /*
+   * Parallax window styles
+   */
+  .parallax-image-window {
+    overflow: hidden;
+  }
+  .parallax-image-window amp-img {
+    margin-bottom: -30%;
+  }
+
+  /*
+   * Carousel transition styles
+   */
+  .carousel-component {
+    margin-right: -60%;
+    margin-left: 60%;
+  }
+  .carousel-parent {
+    overflow: hidden;
+  }
+
+
+
     </style>
   </head>
 
@@ -847,10 +895,9 @@
   <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay">
   </amp-position-observer>
 
-  <amp-img id="fidgetSpinnerImage" width="1024" height="1114" layout="responsive" src="https://amp.dev/static/samples/img/fidget.png" alt="Picture of a fidget spinner"></amp-img>
+  <amp-img id="fidgetSpinnerImage" width="24" height="14" layout="responsive" src="https://amp.dev/static/samples/img/fidget.png" alt="Picture of a fidget spinner"></amp-img>
 </div>
 
-https://amp.dev/static/samples/img/fidget.png
 
     <div id="abe-preview-header" 
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
