@@ -1166,7 +1166,8 @@
       "nombre_0": "Olla Arrocera Hamilton 22,500/500 CUP",
       "nombre_1": "Fogón Eléctrico Saco 22,500/500 CUP",
       "nombre_2": "Sartén Eléctrico Premier 22,500/500 CUP",
-      "nombre_3": "Aire Acondicionado All Novu 450/50 USD"
+      "nombre_3": "Aire Acondicionado All Novu 450/50 USD",
+      "nombre_4": "Aire Acondicionado All Novu 450/50 USD"
     }
   </script>
 </amp-state>
@@ -1179,7 +1180,8 @@
   <script type="application/json">
     {
       "p1": { "fono": "+5351528529" },
-      "p2": { "fono": "+5350214525" }
+      "p2": { "fono": "+5350214525" },
+      "p3": { "fono": "+5355094590" }
     }
   </script>
 </amp-state>
@@ -2021,12 +2023,61 @@
 
                   </div>
 
+               </amp-carousel>
+
+                <amp-carousel id="mayorista-carousel"
+                  hidden
+                  width="500"
+                  height="500"
+                  layout="responsive"
+                  type="slides"
+                  [slide]="product.selectedSlideForMayorista"
+                  on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForMayorista: event.index}})"
+                  class="fadeIn"
+                  [hidden]="product.selectedColor != 'mayorista'">
 
 
+                  <div
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                      [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p3.fono + '&text=Hola podemos hablar sobre '
+                             + cuba.nombre_4"
+                      href = "">
+                      WhatsApp
+                    </a>
+
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "cuba.precio_4">
+                      Llamar
+                    </p>
 
 
+                    <a class="comision-gallery-button">
+                    <span>
+                      Requiere Negociación Presencial
+                     </span>
+                    </a>
+
+                    <amp-img
+                      src="/img/cuba/p2_sl3_aire_acondicionado_all_novu.jpg"
+                      [src]="cuba.imageUrl_3"
+                      width="500"
+                      height="500"
+                      layout="responsive"
+                      on="tap:gallery-lightbox"
+                      role="button"
+                      tabindex="0">
+                    </amp-img>
+
+                  </div>
 
                </amp-carousel>
+
+
+
+
 
 
 
@@ -3251,6 +3302,7 @@
 	    name="carga_id"
 	    value = "3496" 
 	    [value] ="product[product.selectedColor].ids[
+             product.selectedColor == 'mayorista' ? product.selectedSlideForMayorista :               		      
              product.selectedColor == 'cuba' ? product.selectedSlideForCuba :		      
              product.selectedColor == 'yellow' ? product.selectedSlideForYellow :
              product.selectedColor == 'blue'   ? product.selectedSlideForBlue   :
