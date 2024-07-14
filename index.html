@@ -991,11 +991,26 @@
 
         <p id="product-description"
           class="m1">
-	  Está es una app para gestores. Primero debe anotar los datos de entrega:
+	  Está es una app para gestores. Primero verifique que pueda ver las tres fotos que están en este carrusel. Si no se puede entonces no contínue, pues necesitará seleccionar los productos en un carrusel.
         </p>
+
+<div class="carousel-parent">
+  <amp-carousel class="fadeIn" height="300" layout="fixed-height" type="carousel">
+
+    <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay">
+    </amp-position-observer>
+
+    <amp-img src="https://unsplash.it/800/600?image=1003" width="400" height="300" alt="a sample image"></amp-img>
+    <amp-img src="https://unsplash.it/800/600?image=1043" width="400" height="300" alt="another sample image"></amp-img>
+    <amp-img src="https://unsplash.it/800/600?image=1032" width="400" height="300" alt="and another sample image"></amp-img>
+  </amp-carousel>
+</div>
+
 
         <ul 
           class="m1">
+           Primero debe anotar los datos de entrega:
+		
  <li>	   Ingresar los datos del cliente en el formulario del final de la página. </li>
  <li>      Presionar Guardar </li>
  <li>      Presionar Continuar </li>
@@ -1186,17 +1201,6 @@
 </amp-img>
 -->
 
-<div class="carousel-parent">
-  <amp-carousel class="fadeIn" height="300" layout="fixed-height" type="carousel">
-
-    <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay">
-    </amp-position-observer>
-
-    <amp-img src="https://unsplash.it/800/600?image=1003" width="400" height="300" alt="a sample image"></amp-img>
-    <amp-img src="https://unsplash.it/800/600?image=1043" width="400" height="300" alt="another sample image"></amp-img>
-    <amp-img src="https://unsplash.it/800/600?image=1032" width="400" height="300" alt="and another sample image"></amp-img>
-  </amp-carousel>
-</div>
 
 
 
