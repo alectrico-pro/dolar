@@ -1265,12 +1265,31 @@
                       role="button">
                      </amp-img>
                   </li>
-
-
-
-
 	        </ul>
               </div>
+
+
+              <div class="product-gallery">
+                <ul 
+                  hidden
+                  [hidden]="product.selectedColor != 'mayorista'">
+                   <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForMayorista: 0, selectedSlide: 0}})" 
+                      alt="Aire Acondicionado All novu"
+                      src="/img/cuba/p2_sl3_aire_acondicionado_all_novu.jpg"
+                      [src]="cuba.imageUrl_3"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForCuba == 0 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+                </ul>
+              </div>
+
+
 
               <div class="product-gallery">
 
@@ -2955,8 +2974,7 @@
                           class="square yellow"></div>
                       </li>
 
-                      <div option="cuba"
-                          selected
+                      <div option="mayorista"
                           class="square cyan"></div>
                       </li>
 
