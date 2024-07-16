@@ -2028,15 +2028,14 @@
                </amp-carousel>
 
                 <amp-carousel id="mayorista-carousel"
-                  hidden
                   width="500"
                   height="500"
                   layout="responsive"
                   type="slides"
                   [slide]="product.selectedSlideForMayorista"
                   on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForMayorista: event.index}})"
-                  class="fadeIn"
-                  [hidden]="product.selectedColor != 'mayorista'">
+		  class="fadeIn">
+			<!--  [hidden]="product.selectedColor != 'mayorista'">-->
 
 
                   <div
@@ -3302,11 +3301,10 @@
 	 de colores
          -->
 	  <input 
-	    hidden
 	    name="carga_id"
 	    value = "3496" 
 	    [value] ="product[product.selectedColor].ids[
-             product.selectedColor == 'mayorista' ? 0 :               		      
+             product.selectedColor == 'mayorista' ? product.selectedSlideForMayorista :               		      
              product.selectedColor == 'cuba' ? product.selectedSlideForCuba :		      
              product.selectedColor == 'yellow' ? product.selectedSlideForYellow :
              product.selectedColor == 'blue'   ? product.selectedSlideForBlue   :
