@@ -2028,14 +2028,15 @@
                </amp-carousel>
 
                 <amp-carousel id="mayorista-carousel"
+	          hidden
                   width="500"
                   height="500"
                   layout="responsive"
                   type="slides"
                   [slide]="product.selectedSlideForMayorista"
                   on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForMayorista: event.index}})"
-		  class="fadeIn">
-			<!--  [hidden]="product.selectedColor != 'mayorista'">-->
+		  class="fadeIn"
+		  [hidden]="product.selectedColor != 'mayorista'">
 
 
                   <div
@@ -3016,7 +3017,8 @@
 		    on="select:AMP.setState({
 			product: {
 			  selectedColor: event.targetOption,
-			  selectedPotencia: product[event.targetOption].potencias[product.selectedPotencia] != 'inadecuado' ? product.selectedPotencia : product[event.targetOption].defaultPotencia
+			  selectedPotencia: product[event.targetOption].potencias[product.selectedPotencia] != 'inadecuado' ? product.selectedPotencia : product[event.targetOption].defaultPotencia,
+			  selectedProduct: 0
 			}
 		      })">
 		    <ul class="p0 m1">
