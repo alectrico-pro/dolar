@@ -1889,6 +1889,58 @@
 	      Carruseles
 	    -->
 
+              <amp-carousel id="cielo-carousel"
+                  width="500"
+                  height="500"
+                  layout="responsive"
+                  type="slides"
+                  slide=0
+                  [slide]="product.selectedSlideForCielo"
+                  on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForCielo: event.index}})"
+                  class="fadeIn"
+		  hidden
+                  [hidden]="product.selectedColor != 'cielo'">
+
+
+                  <div 
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
+                             + cuba.nombre_6"
+                      href = "tel:+5351528529">
+                      WhatsApp
+                    </a>
+        
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "cuba.precio_6">
+                      Llamar
+                    </p>
+
+                    <a class="comision-gallery-button">
+                     <span>
+                       Mensajería Incluída en la Ciudad
+                    </span>
+                   </a>
+
+                    <amp-img
+                      src="/img/cielo/proveedor_4_grupo_cielo_slide_0.jpg"
+                      [src]="cuba.imageUrl_6"
+                      width="500"
+                      height="500"
+                      layout="responsive"
+                      on="tap:gallery-lightbox"
+                      role="button"
+                      tabindex="0">
+                    </amp-img>
+
+                  </div>
+
+               </amp-carousel>
+
+
+
               <amp-carousel id="cuba-carousel"
                   width="500"
                   height="500"
