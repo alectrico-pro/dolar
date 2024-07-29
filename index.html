@@ -519,7 +519,6 @@
       background-color: #87CEEB;
     }
 
-
     .cyan {
       background-color: #00ffff;
     }
@@ -1222,6 +1221,24 @@
 
 
               <div class="product-gallery">
+
+                <ul 
+                  [hidden]="product.selectedColor != 'cielo'">
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForCielo: 0, selectedSlide: 0}})" 
+                      alt="Olla Arrocera Hamilton"
+                      src="/img/cielo/proveedor_6_grupo_cielo_slide_0.jpg"
+                      [src]="cuba.imageUrl_6"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForCielo == 0 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+                </ul>
+
 
                 <ul 
                   [hidden]="product.selectedColor != 'cuba'">
@@ -3320,6 +3337,7 @@
 	    name="carga_id"
 	    value = "3500" 
 	    [value] ="product[product.selectedColor].ids[
+             product.selectedColor == 'cielo' ? product.selectedSlideForCielo : 
              product.selectedColor == 'mayorista' ? product.selectedSlideForMayorista :               		      
              product.selectedColor == 'cuba' ? product.selectedSlideForCuba :		      
              product.selectedColor == 'yellow' ? product.selectedSlideForYellow :
