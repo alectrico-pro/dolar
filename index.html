@@ -3112,18 +3112,19 @@
 			}
 		      })">
 		    <ul class="p0 m1">
-
+<!--
                       <li>
                         <div option="cuba"
-                          selected
                           class="square yellow"></div>
                       </li>
 
                       <div option="mayorista"
                           class="square cyan"></div>
                       </li>
-
+		      -->
                       <div option="cielo"
+			  hidden
+			  selected
                           class="square cielo"></div>
                       </li>
 
@@ -3398,7 +3399,7 @@
 	  <input
 	    hidden
 	    name="carga_id"
-	    value = "3500" 
+	    value = "3504" 
 	    [value] ="product[product.selectedColor].ids[
              product.selectedColor == 'cielo' ? product.selectedSlideForCielo : 
              product.selectedColor == 'mayorista' ? product.selectedSlideForMayorista :               		      
