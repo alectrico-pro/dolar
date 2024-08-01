@@ -1223,7 +1223,7 @@
 
               <div class="product-gallery">
 
-                <ul hidden
+                <ul 
                   [hidden]="product.selectedColor != 'cielo'">
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForCielo: 0, selectedSlide: 0}})" 
@@ -1242,6 +1242,7 @@
 
 
                 <ul 
+		  hidden
                   [hidden]="product.selectedColor != 'cuba'">
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForCuba: 0, selectedSlide: 0}})" 
@@ -1899,7 +1900,6 @@
                   [slide]="product.selectedSlideForCielo"
                   on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForCielo: event.index}})"
                   class="fadeIn"
-		  hidden
                   [hidden]="product.selectedColor != 'cielo'">
 
 
@@ -1951,6 +1951,7 @@
                   [slide]="product.selectedSlideForCuba"
                   on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForCuba: event.index}})"
                   class="fadeIn"
+		  hidden
                   [hidden]="product.selectedColor != 'cuba'">
 
 
