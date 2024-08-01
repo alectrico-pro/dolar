@@ -99,7 +99,7 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta charset='utf-8'>
     
-    <title>Gestores Santa Store</title>
+    <title>Cuánto vale un Dolar en Cuba</title>
 
     <meta name="amp-experiment-token" content="HfmyLgNLmblRg3Alqy164Vywr">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -131,8 +131,6 @@
     <meta name="amp-google-client-id-api" content="googleanalytics">
     <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-
-    <title>Santa Store</title>
 
     <meta name="description" content="Negocios en Cuba.">
     <meta itemprop="name" content="Santa Store.">
@@ -875,14 +873,12 @@
 
   <body>
 
-    <!--
     <amp-state
-       id = "remoto"
-       src="https://www.alectrico.cl/api/v1/electrico/circuitos/cart.json?amp_cliente_id=CLIENT_ID(uid)&_=RANDOM">
-     </amp-state>
-    -->
+      id = "remoto"
+      src="https://www.alectrico.cl/api/v1/electrico/circuitos/getMarketplaceDolar.json?amp_cliente_id=CLIENT_ID(uid)&_=RANDOM">
+    </amp-state>
+
     <amp-sidebar id="drawermenu" layout="nodisplay">
-     <!--
       <a href="https://plantas.santa.store" class="caps text-decoration-none block p1">Plantas</a>
       <a href="https://servicios.alectrico.cl" class="caps text-decoration-none block p1">Servicios</a>
       <a href="https://shop.alectrico.cl" class="caps text-decoration-none block p1">Shop</a>
@@ -897,13 +893,12 @@
         href="https://alectrico.cl/ñuñoa">Ñuñoa</a>
       <a class="caps text-decoration-none block p1"
         href="https://repair.alectrico.cl">Repair</a>
-      -->
     </amp-sidebar>
 
 
+    <!-- comienzo abe-preview-header -->
     <div id="abe-preview-header" 
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-     <!--
       <a href=".." class="caps text-decoration-none">
         <i class="align-middle inline-block mr1">
           <svg fill="#000000" 
@@ -913,31 +908,33 @@
 	    <path d="M0 0h24v24H0z" fill="none"/>
 	  </svg>
         </i>
-     </a>
-     -->
-     <!--
+      </a>
+
       <amp-img srcset="/img/logo_flash.png" 
 	width="424" 
 	height="88" 
 	alt="logo flash">
       </amp-img>
-     -->
+
       <amp-img srcset="/safari-pinned-tab.svg" 
         width="24" 
         height="24" 
         alt="logo flash">
       </amp-img>
+
       <h1 id="abe-preview-header-title" 
         class="h3 center truncate caps">
         SANTA.CAPITAL
       </h1>
+
       <section amp-access="NOT loggedIn">
-        <template amp-access-template type="amp-mustache">
+       <template amp-access-template type="amp-mustache">
 	<!--
          {{presupuesto_local}}-local
 	 -->
         </template>
       </section>
+
       <section amp-access="loggedIn">
         <template amp-access-template type="amp-mustache">
         <!---
@@ -947,92 +944,79 @@
 	  {{current_user}}
         </template>
       </section>
-    </div>
+    </div>  
+    <!-- fin abe-preview header -->
 
+    <!-- comienzo abr-preview -->
     <div id="abe-preview">
       <div class="ampstart-card m1">
         <div class="header">
- 	  <a id="sample-menu" on="tap:drawermenu.toggle">
-	    <amp-img srcset="/img/ic_menu_white_1x_web_24dp.png 1x, /img/ic_menu_white_2x_web_24dp.png 2x" 
+          <a id="sample-menu" on="tap:drawermenu.toggle">
+            <amp-img srcset="/img/ic_menu_white_1x_web_24dp.png 1x, /img/ic_menu_white_2x_web_24dp.png 2x" 
 	      width="24" 
 	      height="24" 
 	     alt="navigation">
-	    </amp-img>
-	  </a>
-	  <!---
-	  <form method="GET" action="https://shop.alectrico.cl/productos/10" 
-	    target="_top">
-	    <input name="search" type="search" placeholder="Buscar">
-	    <a id="sample-logo" href="/">Designer</a> 
-	    <input type="submit" value="">
-	  </form>
-	  -->
-	</div>
+            </amp-img>
+          </a>
+        </div>
+
+        <!-- fin header -->
         <h2 class="m1">Dolar Santa Capital</h2>
-	<h3 class="m1">Ventas sin Complejos!</h3>
+        <h3 class="m1">Ventas sin Complejos!</h3>
 
-
-	<amp-animation id="spinAnimation" layout="nodisplay">
-	  <script type="application/json">
-	    {
-	      "duration": "1",
-	      "fill": "both",
-	      "direction": "reverse",
-	      "animations": [
-		{
-		  "selector": "#fidgetSpinnerImage",
-		  "keyframes": [
-		    { "transform": "rotate(360deg)" }
-		  ]
-		}
-	      ]
-	    }
-	  </script>
-	</amp-animation>
-
-	<div class="m1">
+        <div class="m1">
           <amp-social-share type="facebook" width="30" height="22" data-param-app_id="860581905818440"></amp-social-share>
-	  <amp-social-share type="email" width="30" height="22"></amp-social-share>
-	  <amp-social-share type="pinterest" width="33" height="22"></amp-social-share>
-	</div>
+          <amp-social-share type="email" width="30" height="22"></amp-social-share>
+          <amp-social-share type="pinterest" width="33" height="22"></amp-social-share>
+        </div>
 
         <p id="product-description"
           class="m1">
-	  Está es una app para gestores. Primero verifique que pueda ver las tres fotos que están en este carrusel. Si no se puede entonces no contínue, pues necesitará seleccionar los productos en un carrusel.
+ 	  Está es una app para consutlar valores de divisas desde Cuba.
         </p>
 
-	<div class="carousel-parent">
-	  <amp-carousel class="fadeIn" height="300" layout="fixed-height" type="carousel">
+        <!-- comienzo experiencia fidget -->
+        <amp-animation id="spinAnimation" layout="nodisplay">
+          <script type="application/json">
+            {
+              "duration": "1",
+              "fill": "both",
+              "direction": "reverse",
+              "animations": [
+                {
+                  "selector": "#fidgetSpinnerImage",
+                  "keyframes": [
+                    { "transform": "rotate(360deg)" }
+                  ]
+                }
+              ]
+            }
+          </script>
+        </amp-animation>
 
-	    <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay">
-	    </amp-position-observer>
-
-	    <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt="a sample image"></amp-img>
-	    <amp-img src="./img/1043-800x600.jpg" width="400" height="300" alt="another sample image"></amp-img>
-	    <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt="and another sample image"></amp-img>
-	  </amp-carousel>
-	</div>
-
+        <div class="carousel-parent">
+          <amp-carousel class="fadeIn" height="300" layout="fixed-height" type="carousel">
+           <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay">
+           </amp-position-observer>
+           <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt="a sample image"></amp-img>
+           <amp-img src="./img/1043-800x600.jpg" width="400" height="300" alt="another sample image"></amp-img>
+           <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt="and another sample image"></amp-img>
+          </amp-carousel>
+        </div>
 
         <div class="fidget-spinner-scene">
-
           <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay">
           </amp-position-observer>
 
           <amp-img id="fidgetSpinnerImage" width="1014" height="1114" layout="responsive" src="./img/fidget.png" alt="Picture of a fidget spinner"></amp-img>
         </div>
+        <!-- fin de experiencia fidget -->
 
-	<amp-install-serviceworker
-	  src="/sw.js"
-	  data-iframe-src="https://amp_install_serviceworker.html"
-           layout="nodisplay">
-        </amp-install-serviceworker>
-
+        <!-- comienzo experiencia elefante -->
         <div class="parallax-image-window">
           <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay">
-	  </amp-position-observer>
-
-	   <amp-img id="parallaxImage" width="1280" height="873" layout="responsive" src="./img/elephant.jpg" alt="Picture of an elephant"></amp-img>
+          </amp-position-observer>
+          <amp-img id="parallaxImage" width="1280" height="873" layout="responsive" src="./img/elephant.jpg" alt="Picture of an elephant"></amp-img>
         </div>
 
         <amp-animation id="parallaxTransition" layout="nodisplay">
@@ -1052,6 +1036,13 @@
 	    }
           </script>
         </amp-animation>
+
+        <amp-install-serviceworker
+          src="/sw.js"
+          data-iframe-src="https://amp_install_serviceworker.html"
+          layout="nodisplay">
+        </amp-install-serviceworker>
+
       </div>
     </div>
   </body>
