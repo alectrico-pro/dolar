@@ -953,7 +953,8 @@
         <!-- fin header -->
         <h2 class="m1">Dolar Santa Capital</h2>
         <h3 class="m1">Ventas sin Complejos!</h3>
-        <p class="price-description"> 1 CUP = <span [text]="divisas.dolar"> </span> USD  </p>
+
+        <h4 id="dolar" class="price-description"> 1 CUP = <span [text]="divisas.dolar"> </span> USD  </h4>
 
         <div class="m1">
           <amp-social-share type="facebook" width="30" height="22" data-param-app_id="860581905818440"></amp-social-share>
@@ -986,7 +987,7 @@
         </amp-animation>
 
         <div class="carousel-parent">
-          <amp-carousel class="fadeIn" on="tap:AMP.setState({divisas: {dolar: -1}})" height="300" layout="fixed-height" type="carousel">
+          <amp-carousel class="fadeIn" on="tap:divisas.refresh" height="300" layout="fixed-height" type="carousel">
            <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay">
            </amp-position-observer>
            <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
