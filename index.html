@@ -948,12 +948,12 @@
         <!--  AMP.setState({divisa: {dolar: 400}}) -->
  	<!--  on="enter:carouselTransition.start"  -->
         <div class="carousel-parent">
- 	  <amp-carousel class="fadeIn" height="300" layout="fixed-height" type="carousel">
+ 	  <amp-carousel class="fadeIn" on="enter:carouselTransition.start,divisa.refresh" height="300" layout="fixed-height" type="carousel">
             <amp-position-observer 
 		   intersection-ratios="0.8" 
 		   layout="nodisplay">
             </amp-position-observer>
-            <amp-img src="./img/1003-800x600.jpg" role="button" tabindex=0 on="tap:divisa.refresh" width="400" height="300" alt=""></amp-img>
+            <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
             <amp-img src="./img/1043-800x600.jpg" width="400" height="300" alt=""></amp-img>
             <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt=""></amp-img>
           </amp-carousel>
