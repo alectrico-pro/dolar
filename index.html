@@ -899,23 +899,6 @@
         </template>
        </section>
 
-       <!-- fin valor del dólar -->
-        <!--  AMP.setState({divisa: {dolar: 400}}) -->
-        <!--  on="enter:carouselTransition.start"  -->
-        <div class="carousel-parent">
-          <amp-carousel height="300" layout="fixed-height" type="carousel">
-             <amp-position-observer 
-                   on="enter:carouselTransition.start"
-                   intersection-ratios="1" 
-                   layout="nodisplay">
-             </amp-position-observer>
-             <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
-             <amp-img src="./img/1043-800x600.jpg" width="400" height="300" alt=""></amp-img>
-             <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt=""></amp-img>
-          </amp-carousel>
-        </div>
-
-
 
       <section amp-access="loggedIn">
         <template amp-access-template type="amp-mustache">
@@ -944,7 +927,6 @@
 
         <!-- fin header -->
         <h2 class="m1">Santa.Capital</h2>
-	<!--
         <h3 class="m1">Ventas sin Complejos!</h3>
 
 
@@ -960,7 +942,26 @@
           class="m1">
  	  Valor del Dólar para Cuba ( Eltoque https://www.eltoque.com).
         </p>
-        -->
+
+       <!-- fin valor del dólar -->
+        <!--  AMP.setState({divisa: {dolar: 400}}) -->
+        <!--  on="enter:carouselTransition.start"  -->
+        <div class="carousel-parent">
+          <amp-carousel height="300" layout="fixed-height" type="carousel">
+             <amp-position-observer 
+                   on="enter:carouselTransition.start"
+                   intersection-ratios="1" 
+                   layout="nodisplay">
+             </amp-position-observer>
+             <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
+             <amp-img src="./img/1043-800x600.jpg" width="400" height="300" alt=""></amp-img>
+             <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt=""></amp-img>
+          </amp-carousel>
+        </div>
+
+
+
+
 
         <!--
         <section amp-access="NOT loggedIn">
