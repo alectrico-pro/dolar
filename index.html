@@ -945,7 +945,7 @@
         <!--  AMP.setState({divisa: {dolar: 400}}) -->
  	<!--  on="enter:carouselTransition.start"  -->
         <div class="carousel-parent">
- 	  <amp-carousel class="fadeIn" tabindex=1 role="button" on="tap:divisa_text.refresh " height="300" layout="fixed-height" type="carousel">
+ 	  <amp-carousel class="fadeIn" height="300" layout="fixed-height" type="carousel">
             <amp-position-observer 
 		   intersection-ratios="0.8" 
 		   layout="nodisplay">
@@ -964,7 +964,7 @@
             <small>eltoque.com</small>
           </template>
         </section>
-        -- fin valor del dólar -->
+        -->
 
         <!-- comienzo experiencia fidget -->
         <amp-animation id="spinAnimation" layout="nodisplay">
@@ -995,7 +995,7 @@
           <amp-img id="fidgetSpinnerImage" width="1014" 
 					   height="1014"
 					   layout="responsive" 
-					   src="./img/un_dolar.png" 
+					   src="./img/fidget.png" 
 					   alt="">
 	  </amp-img>
         </div>
@@ -1006,7 +1006,7 @@
         <!--
 	<div class="parallax-image-window">
           <amp-position-observer 
-	     on="scroll:parallaxTransition.seekTo(percent=event.percent)" 
+	     on="scroll:parallaxTransition.seekTo(percent=event.percent), divisa.refresh" 
 	     intersection-ratios="0" 
 	     layout="nodisplay">
           </amp-position-observer>
