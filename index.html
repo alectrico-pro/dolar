@@ -1108,7 +1108,7 @@
           <amp-carousel height="300" layout="fixed-height" type="carousel">
              <amp-position-observer 
                    on="enter:carouselTransition.start"
-                   intersection-ratios="0.1" 
+                   intersection-ratios="1" 
                    layout="nodisplay">
              </amp-position-observer>
              <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
@@ -1117,6 +1117,39 @@
           </amp-carousel>
         </div>
 
+       <!-- comienzo experiencia fidget -->
+        <amp-animation id="spinAnimation3" layout="nodisplay">
+          <script type="application/json">
+            {
+              "duration": "1",
+              "fill": "both",
+              "direction": "reverse",
+              "animations": [
+                {
+                  "selector": "#fidgetSpinnerImage",
+                  "keyframes": [
+                    { "transform": "rotate(360deg)" }
+                  ]
+                }
+              ]
+            }
+          </script>
+        </amp-animation>
+
+        <div class="fidget-spinner-scene"  overflow="hidden" >
+          <amp-position-observer 
+                   on="scroll:spinAnimation3.seekTo(percent=event.percent)" 
+                  intersection-ratios="0.1" 
+                  layout="nodisplay">
+          </amp-position-observer>
+
+          <amp-img id="fidgetSpinnerImage" width="1014" 
+                                           height="1014"
+                                           layout="responsive" 
+                                           src="./img/un_dolar.png" 
+                                           alt="">
+          </amp-img>
+        </div>
 
 
       </div>
