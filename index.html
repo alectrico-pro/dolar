@@ -957,46 +957,6 @@
         <h3 class="m1">Ventas sin Complejos!</h3>
 
 
-        <section class = 'divisas-section'>
-          <amp-list 
-            template="divisas-list-template"
-            credentials="include"
-            binding="refresh"
-            width="auto"
-            height="180"
-            items="."
-            single-item
-            layout="fixed-height"
-            src="https://www.alectrico.cl/api/v1/electrico/circuitos/divisas.json?amp_cliente_id=CLIENT_ID(uid)&_=RANDOM"
-            id="divisas-list">
-           <div overflow = "" class = "list-overflow">VER MÁS</div>
-         </amp-list>
-        </section>
-
-        <template type="amp-mustache"
-          id = "divisas-list-template">
-          <div class="shopping-cart">
-             <div class="item header">
-               <div class="name">
-                 <strong>USD</strong>
-               </div>
-               <div class="name">
-                 <strong>MLC</strong>
-               </div>
-            </div>
-            {{#items}}
-              <div class="item">
-                <div class="name">{{dolar}}</div>
-                <div class="name">{{mlc}}</div> 
-              </div>
-            {{/items}}
-          </div>
-        </template>
-
-
-
-
-        <h4 id="dolar" class="price-description"> 1 CUP = <span [text]="divisas.dolar"> </span> USD  </h4>
 
         <div class="m1">
           <amp-social-share type="facebook" width="30" height="22" data-param-app_id="860581905818440"></amp-social-share>
@@ -1008,6 +968,15 @@
           class="m1">
  	  Valor del Dólar para Cuba ( Eltoque https://www.eltoque.com).
         </p>
+
+	<!-- ver valor del dólar -->
+        <section amp-access="NOT loggedIn">
+          <template amp-access-template type="amp-mustache">
+            1 USD = {{dolar}} CUP
+            <small>eltoque.com</small>
+          </template>
+        </section>
+        <!-- fin valor del dólar -->
 
         <!-- comienzo experiencia fidget -->
         <amp-animation id="spinAnimation" layout="nodisplay">
