@@ -1000,7 +1000,7 @@
           </script>
         </amp-animation>
 
-        <div class="carousel-parent">
+        <div hidden class="carousel-parent">
           <amp-carousel class="fadeIn" on="tap:divisas.refresh" height="300" layout="fixed-height" type="carousel">
            <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay">
            </amp-position-observer>
@@ -1014,12 +1014,12 @@
           <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay">
           </amp-position-observer>
 
-          <amp-img id="fidgetSpinnerImage" width="1014" height="1114" layout="responsive" src="./img/un_dolar.webp" alt="Picture of a fidget spinner"></amp-img>
+          <amp-img id="fidgetSpinnerImage" width="1014" height="1114" layout="responsive" src="./img/un_dolar.webp" alt=""></amp-img>
         </div>
         <!-- fin de experiencia fidget -->
 
         <!-- comienzo experiencia elefante -->
-        <div class="parallax-image-window">
+        <div hidden class="parallax-image-window">
           <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay">
           </amp-position-observer>
           <amp-img id="parallaxImage" width="1280" height="873" layout="responsive" src="./img/elephant.jpg" alt="Picture of an elephant"></amp-img>
