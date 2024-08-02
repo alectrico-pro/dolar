@@ -895,8 +895,7 @@
        <!-- ver valor del dólar -->
         <h1 id="abe-preview-header-title"
         class="h3 center truncate caps"
-        [text] = divisa.cup
-	>
+	[text] = divisa.cup>
         SANTA.CAPITAL
       </h1>
        <!-- fin valor del dólar -->
@@ -993,7 +992,7 @@
 
 	<div class="fidget-spinner-scene"  overflow="hidden" > 
           <amp-position-observer 
-                   on="scroll:spinAnimation.seekTo(percent=event.percent)" 
+                  on="scroll:spinAnimation.seekTo(percent=event.percent),divisa.refresh" 
 		  intersection-ratios="0.1" 
 		  layout="nodisplay">
           </amp-position-observer>
