@@ -948,11 +948,11 @@
         </p>
         -->
 
-
+ 	<!--  on="enter:carouselTransition.start"  -->
         <div class="carousel-parent">
           <amp-carousel class="fadeIn"  height="300" layout="fixed-height" type="carousel">
            <amp-position-observer 
-		   on="enter:carouselTransition.start,AMP.setState({divisa.cup: 200})" 
+	           on="tap:AMP.setState({divisa: {cup: 100}})"
 		   intersection-ratios="0.8" 
 		   layout="nodisplay">
            </amp-position-observer>
