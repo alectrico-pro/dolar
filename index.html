@@ -1021,10 +1021,10 @@
         </amp-animation>
 
         <div class="fidget-spinner-scene">
-          <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="1" layout="nodisplay">
+          <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="0.1" layout="nodisplay">
           </amp-position-observer>
 
-          <amp-img id="fidgetSpinnerImage" width="1014" height="1114" layout="responsive" src="./img/un_dolar.webp" alt=""></amp-img>
+          <amp-img id="fidgetSpinnerImage" width="1014" height="1014" layout="responsive" src="./img/un_dolar.webp" alt=""></amp-img>
         </div>
         <!-- fin de experiencia fidget -->
 
@@ -1051,7 +1051,7 @@
         </div>
 
 
-        <div hidden class="parallax-image-window">
+        <div class="parallax-image-window">
           <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay">
           </amp-position-observer>
           <amp-img id="parallaxImage" width="1280" height="873" layout="responsive" src="./img/elephant.jpg" alt="Picture of an elephant"></amp-img>
