@@ -892,7 +892,8 @@
         SANTA.CAPITAL
       </h1>
       -->
-       <h1 id="divisa_text" class="h3 center truncate caps"> 1 USD | <span [text]="divisa.dolar">USD</span>  </h1>
+      <h1 id="divisa_text" class="h3 center truncate caps"> 1 USD | <span [text]="divisa.dolar">CLP</span> </h1>
+      <small>eltoque.com</small>
 
        <!-- fin valor del dólar -->
 
@@ -944,14 +945,14 @@
         <!--  AMP.setState({divisa: {dolar: 400}}) -->
  	<!--  on="enter:carouselTransition.start"  -->
         <div class="carousel-parent">
-		<amp-carousel class="fadeIn" tabindex=1 role="button" on="tap:divisa.refresh " height="300" layout="fixed-height" type="carousel">
-           <amp-position-observer 
+ 	  <amp-carousel class="fadeIn" tabindex=1 role="button" on="tap:divisa_text.refresh " height="300" layout="fixed-height" type="carousel">
+            <amp-position-observer 
 		   intersection-ratios="0.8" 
 		   layout="nodisplay">
-           </amp-position-observer>
-           <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
-           <amp-img src="./img/1043-800x600.jpg" width="400" height="300" alt=""></amp-img>
-           <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt=""></amp-img>
+            </amp-position-observer>
+            <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
+            <amp-img src="./img/1043-800x600.jpg" width="400" height="300" alt=""></amp-img>
+            <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt=""></amp-img>
           </amp-carousel>
         </div>
 
