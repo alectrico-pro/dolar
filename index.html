@@ -872,13 +872,8 @@
 
   <body>
 
-    <amp-state id="divisa">
-      <script type="application/json">
-         {
-           "cup": "100",
-           "dolar": "1"
-         }
-      </script>
+    <amp-state id="divisa"
+       src="https://www.alectrico.cl/api/v1/electrico/circuitos/divisas.json?amp_cliente_id=CLIENT_ID(uid)&_=RANDOM"   >
     </amp-state>
 
     <!-- comienzo abe-preview-header -->
@@ -947,13 +942,9 @@
         </p>
         -->
 
-        <section amp-access="NOT loggedIn">
-          <template amp-access-template type="amp-mustache">
-
-
  	<!--  on="enter:carouselTransition.start"  -->
         <div class="carousel-parent">
-		<amp-carousel class="fadeIn" on="tap:AMP.setState({divisa: {cup: {{dolar}}}})" height="300" layout="fixed-height" type="carousel">
+		<amp-carousel class="fadeIn" on="tap:AMP.setState({divisa: {cup: 300}}), divisa_text.refresh " ight="300" layout="fixed-height" type="carousel">
            <amp-position-observer 
 		   intersection-ratios="0.8" 
 		   layout="nodisplay">
@@ -963,18 +954,16 @@
            <amp-img src="./img/1032-800x600.jpg" width="400" height="300" alt=""></amp-img>
           </amp-carousel>
         </div>
-          </template>
-        </section>
 
 
-	<!-- comienzo valor del dolar -->
+	<!-- comienzo valor del dolar 
         <section amp-access="NOT loggedIn">
           <template amp-access-template type="amp-mustache">
             1 USD = {{dolar}} CUP
             <small>eltoque.com</small>
           </template>
         </section>
-        <!-- fin valor del dólar -->
+        -- fin valor del dólar -->
 
         <!-- comienzo experiencia fidget -->
         <amp-animation id="spinAnimation" layout="nodisplay">
