@@ -949,11 +949,10 @@
         -->
 
 
-       <!--
         <div class="carousel-parent">
           <amp-carousel class="fadeIn"  height="300" layout="fixed-height" type="carousel">
            <amp-position-observer 
-		   on="enter:carouselTransition.start" 
+		   on="enter:carouselTransition.start,AMP.setState({divisa.cup: 200})" 
 		   intersection-ratios="0.8" 
 		   layout="nodisplay">
            </amp-position-observer>
@@ -963,7 +962,6 @@
           </amp-carousel>
         </div>
 
-       -->
 
 	<!-- comienzo valor del dolar -->
         <section amp-access="NOT loggedIn">
@@ -993,9 +991,9 @@
           </script>
         </amp-animation>
 
-	<div class="fidget-spinner-scene"  overflow="hidden" > 
+	<div class="fidget-spinner-scene"  > 
           <amp-position-observer 
-                  on="scroll:spinAnimation.seekTo(percent=event.percent),AMP.setState({divisa.cup: 200})"
+                  on="scroll:spinAnimation.seekTo(percent=event.percent)"
 		  intersection-ratios="0.1" 
 		  layout="nodisplay">
           </amp-position-observer>
