@@ -892,11 +892,15 @@
         SANTA.CAPITAL
       </h1>
       -->
-      <h1 id="divisa_text" class="h3 center truncate caps"> 1 USD | <span [text]="divisa.dolar">CUP</span> </h1>
-      <small>eltoque.com</small>
-       <p class="price-description"> $
-          <span [text]="divisa.dolar">Cargando ..  </span>
-       </p>
+      <section amp-access="NOT loggedIn">
+        <template amp-access-template type="amp-mustache">
+          <h1 id="divisa_text" class="h3 center truncate caps"> 1 USD | <span [text]="divisa.dolar">CUP</span> </h1>
+          <small>eltoque.com</small>
+          <p class="price-description"> $
+            <span [text]={{dolar}}>Cargando ..  </span>
+           </p>
+        </template>
+       </section>
 
        <!-- fin valor del dólar -->
 
@@ -948,7 +952,7 @@
         <!--  AMP.setState({divisa: {dolar: 400}}) -->
  	<!--  on="enter:carouselTransition.start"  -->
         <div class="carousel-parent">
- 	  <amp-carousel id="carouselTransition" class="fadeIn" height="300" layout="fixed-height" type="carousel">
+ 	  <amp-carousel height="300" layout="fixed-height" type="carousel">
              <amp-position-observer 
                    on="enter:carouselTransition.start"
 		   intersection-ratios="0.8" 
@@ -966,7 +970,6 @@
           <template amp-access-template type="amp-mustache">
             1 USD = {{dolar}} CUP
             <small>eltoque.com</small>
-
           </template>
         </section>
 
