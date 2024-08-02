@@ -975,7 +975,7 @@
 
 
         <div class="carousel-parent">
-          <amp-carousel class="fadeIn" on="tap:divisas.refresh" z-index=-1 height="300" layout="fixed-height" type="carousel">
+          <amp-carousel class="fadeIn"  height="300" layout="fixed-height" type="carousel">
            <amp-position-observer on="enter:carouselTransition.start" intersection-ratios="0.8" layout="nodisplay">
            </amp-position-observer>
            <amp-img src="./img/1003-800x600.jpg" width="400" height="300" alt=""></amp-img>
@@ -1011,11 +1011,19 @@
           </script>
         </amp-animation>
 
-        <div class="fidget-spinner-scene">
-          <amp-position-observer on="scroll:spinAnimation.seekTo(percent=event.percent)" intersection-ratios="0.1" layout="nodisplay">
+	<div class="fidget-spinner-scene"  overflow="hidden" > 
+          <amp-position-observer 
+                   on="scroll:spinAnimation.seekTo(percent=event.percent)" 
+		  intersection-ratios="0.1" 
+		  layout="nodisplay">
           </amp-position-observer>
 
-          <amp-img id="fidgetSpinnerImage" width="1014" height="1014" layout="responsive" src="./img/un_dolar.webp" alt=""></amp-img>
+          <amp-img id="fidgetSpinnerImage" width="1014" 
+					   height="1014"
+					   layout="responsive" 
+					   src="./img/un_dolar.webp" 
+					   alt="">
+	  </amp-img>
         </div>
         <!-- fin de experiencia fidget -->
 
@@ -1023,9 +1031,15 @@
 
 
         <div class="parallax-image-window">
-          <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay">
+          <amp-position-observer 
+	     on="scroll:parallaxTransition.seekTo(percent=event.percent)" 
+	     intersection-ratios="0" 
+	     layout="nodisplay">
           </amp-position-observer>
-          <amp-img id="parallaxImage" width="1280" height="873" layout="responsive" src="./img/elephant.jpg" alt="Picture of an elephant"></amp-img>
+          <amp-img id="parallaxImage" 
+		  width="1280" height="873" 
+		  layout="responsive" src="./img/elephant.jpg" 
+		  alt="Picture of an elephant"></amp-img>
         </div>
 
         <amp-animation id="parallaxTransition" layout="nodisplay">
