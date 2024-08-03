@@ -1009,10 +1009,16 @@
 
         <!-- comienzo experiencia elefante -->
 
-        <!--
+	<!-- elephante -->
+	      -->
+    <section amp-access="NOT loggedIn">
+      <template amp-access-template type="amp-mustache">
+         <h1 id="divisa_text" class="h3 center truncate caps"> 1 USD | <span> {{dolar}} CUP </span> </h1>
+         <small>eltoque.com</small>
+
 	<div class="parallax-image-window">
           <amp-position-observer 
-	     on="scroll:parallaxTransition.seekTo(percent=event.percent), divisa.refresh" 
+	     on="scroll:parallaxTransition.seekTo(percent=event.percent)" 
 	     intersection-ratios="0" 
 	     layout="nodisplay">
           </amp-position-observer>
@@ -1039,7 +1045,9 @@
 	    }
           </script>
         </amp-animation>
-	-->
+      </template>
+    </section>
+
         <!-- fin experiencia elefante -->
 
         <amp-install-serviceworker
