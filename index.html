@@ -1045,14 +1045,11 @@
 
         <p [text]=divisa.dolar></p>
 
-   <section amp-access="NOT loggedIn">
-        <template amp-access-template type="amp-mustache">
-
-
+    <section amp-access="NOT loggedIn">
+      <template amp-access-template type="amp-mustache">
         <div class="flex fixed justify-start items-center top-10">
 	  <div flex="1 1 auto">
-		  <amp-base-carousel width="110"  on="slideChange:AMP.setState({ divisa: {dolar: '{{dolar}}'}, selectedCentenaSlide: event.index})"  height="90" layout="fixed" horizontal=false >
-
+	    <amp-base-carousel width="110"  on="slideChange:AMP.setState({ divisa: {dolar: '{{dolar}}'}, selectedCentenaSlide: event.index})"  height="90" layout="fixed" horizontal=false >
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
@@ -1063,14 +1060,11 @@
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
-
-
 
              </amp-base-carousel>
 	  </div>
           <div flex="1 1 auto">
-		  <amp-base-carousel width="110" height="90" layout="fixed" on="slideChange:AMP.setState({ {divisa: {dolar: '{{dolar}}'}, selectedDecenaSlide: event.index })"   horizontal=false >
-
+	    <amp-base-carousel width="110" height="90" on="slideChange:AMP.setState({ {divisa: {dolar: '{{dolar}}'}, selectedDecenaSlide: event.index })" horizontal=false layout="fixed" >
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
@@ -1081,13 +1075,11 @@
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
-
-
 
              </amp-base-carousel>
           </div>
           <div flex="1 1 auto">
-		  <amp-base-carousel width="110" height="90" layout="fixed" horizontal=false  on="slideChange:AMP.setState({ divisa: {dolar: '{{dolar}}'}, selectedUnidadSlide: event.index })" >
+	    <amp-base-carousel width="110" height="90" layout="fixed" horizontal=false  on="slideChange:AMP.setState({ divisa: {dolar: '{{dolar}}'}, selectedUnidadSlide: event.index })" >
                <amp-img src="./img/un_dolar.png" width="400" height="300" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="400" height="300" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="400" height="300" alt=""></amp-img>
@@ -1102,8 +1094,8 @@
              </amp-base-carousel>
           </div>
         </div>
-        </template>
-       </section>
+      </template>
+     </section>
 
 
         <amp-install-serviceworker
