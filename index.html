@@ -1037,6 +1037,10 @@
         <h2 class="m1">Santa.Capital</h2>
         <h3 class="m1">Ventas sin Complejos!</h3>
 
+   <section amp-access="NOT loggedIn">
+        <template amp-access-template type="amp-mustache">
+
+
 	<h1> <span [text]="+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100 ">USD |
              </span>
 	<span [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100) * 320 "> 
@@ -1095,6 +1099,8 @@
              </amp-base-carousel>
           </div>
         </div>
+        </template>
+       </section>
 
 
         <amp-install-serviceworker
