@@ -1180,25 +1180,56 @@
       </template>
      </section>
 
+         <amp-carousel id="cielo-carousel"
+                  width="500"
+                  height="500"
+                  layout="responsive"
+                  type="slides"
+                  slide=0
+                  [slide]="product.selectedSlideForCielo"
+                  on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForCielo: event.index}})"
+                  class="fadeIn"
+                  [hidden]="product.selectedColor != 'cielo'">
 
-              <div class="product-gallery">
 
-	      <ul >
-                  <li>
-                    <amp-img on="tap:AMP.setState({product: {selectedSlideForCielo: 0, selectedSlide: 0}})" 
-                      alt="Refrigerador Premium de 7.4 pies 440/10USD"
+                  <div 
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
+                             + cuba.nombre_5"
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "cuba.precio_5">
+                      Llamar
+                    </p>
+
+                    <a class="comision-gallery-button">
+                     <span>
+                       Mensajería Incluída en la Ciudad
+                    </span>
+                   </a>
+
+                    <amp-img
                       src="/img/cielo/proveedor_4_grupo_cielo_slide_0.jpg"
                       [src]="cuba.imageUrl_5"
-                      width="60"
-                      height="40"
-                      class=""
-                      [class]="product.selectedSlideForCielo == 0 ? 'selected fadeIn' : '' "
-                      tabindex="0"
-                      role="button">
-                     </amp-img>
-                  </li>
-                </ul>
-            </div>
+                      width="500"
+                      height="500"
+                      layout="responsive"
+                      on="tap:gallery-lightbox"
+                      role="button"
+                      tabindex="0">
+                    </amp-img>
+
+                  </div>
+
+               </amp-carousel>
+
+
 
         <amp-install-serviceworker
           src="/sw.js"
