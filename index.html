@@ -1037,10 +1037,12 @@
         <h2 class="m1">Santa.Capital</h2>
         <h3 class="m1">Ventas sin Complejos!</h3>
 
-
+       <h1>Selected slide: <span [text]="+selectedSlide + 1">1</span>/3</h1>
+       <h1>Selected slide: <span [text]="+selectedSlide + 1">1</span>/3</h1>
+       <h1>Selected slide: <span [text]="+selectedSlide + 1">1</span>/3</h1>
         <div class="flex justify-start items-center">
 	  <div flex="1 1 auto">
-             <amp-base-carousel width="110" height="90" layout="fixed" horizontal=false >
+             <amp-base-carousel width="110"  on="slideChange:AMP.setState({ selectedSlide: event.index })"  height="90" layout="fixed" horizontal=false >
 
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
