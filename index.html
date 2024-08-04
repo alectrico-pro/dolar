@@ -1037,12 +1037,13 @@
         <h2 class="m1">Santa.Capital</h2>
         <h3 class="m1">Ventas sin Complejos!</h3>
 
-       <h1>Selected slide: <span [text]="+selectedSlide + 1">1</span>/3</h1>
-       <h1>Selected slide: <span [text]="+selectedSlide + 1">1</span>/3</h1>
-       <h1>Selected slide: <span [text]="+selectedSlide + 1">1</span>/3</h1>
-        <div class="flex fixed justify-start items-center">
+       <h1> <span [text]="+selectedMilenaSlide + 1"></span></h1>
+       <h1> <span [text]="+selectedCentenaSlide + 1"></span></h1>
+       <h1> <span [text]="+selectedUnidadSlide + 1">0</span></h1>
+       <h1> USD </h1>
+        <div class="flex fixed justify-start items-center top-10">
 	  <div flex="1 1 auto">
-             <amp-base-carousel width="110"  on="slideChange:AMP.setState({ selectedSlide: event.index })"  height="90" layout="fixed" horizontal=false >
+             <amp-base-carousel width="110"  on="slideChange:AMP.setState({ selectedMilenaSlide: event.index })"  height="90" layout="fixed" horizontal=false >
 
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
@@ -1060,7 +1061,7 @@
              </amp-base-carousel>
 	  </div>
           <div flex="1 1 auto">
-             <amp-base-carousel width="110" height="90" layout="fixed" horizontal=false >
+             <amp-base-carousel width="110" height="90" layout="fixed" on="slideChange:AMP.setState({ selectedCentaSlide: event.index })"   horizontal=false >
 
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt=""></amp-img>
@@ -1078,7 +1079,7 @@
              </amp-base-carousel>
           </div>
           <div flex="1 1 auto">
-             <amp-base-carousel width="110" height="90" layout="fixed" horizontal=false >
+             <amp-base-carousel width="110" height="90" layout="fixed" horizontal=false  on="slideChange:AMP.setState({ selectedUnidadSlide: event.index })" >
                <amp-img caption="0" src="./img/un_dolar.png" width="400" height="300" alt=""></amp-img>
                <amp-img caption="1" src="./img/un_dolar.png" width="400" height="300" alt=""></amp-img>
                <amp-img src="./img/un_dolar.png" width="400" height="300" alt=""></amp-img>
