@@ -1037,10 +1037,8 @@
         <h2 class="m1">Santa.Capital</h2>
         <h3 class="m1">Ventas sin Complejos!</h3>
 
-       <h1> <span [text]="+selectedMilenaSlide + 1"></span></h1>
-       <h1> <span [text]="+selectedCentenaSlide + 1"></span></h1>
-       <h1> <span [text]="+selectedUnidadSlide + 1">0</span></h1>
-       <h1> USD </h1>
+       <h1> <span [text]="+selectedUnidadSlide + selectedCentenaSlide + selectedMilenaSlide">0</span>USD</h1>
+
         <div class="flex fixed justify-start items-center top-10">
 	  <div flex="1 1 auto">
              <amp-base-carousel width="110"  on="slideChange:AMP.setState({ selectedMilenaSlide: event.index })"  height="90" layout="fixed" horizontal=false >
