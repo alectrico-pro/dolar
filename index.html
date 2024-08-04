@@ -1120,6 +1120,26 @@
      </section>
 
 
+              <div class="product-gallery">
+
+                <ul 
+                  [hidden]="product.selectedColor != 'cielo'">
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForCielo: 0, selectedSlide: 0}})" 
+                      alt="Olla Arrocera Hamilton"
+                      src="/img/cielo/proveedor_4_grupo_cielo_slide_0.jpg"
+                      [src]="cuba.imageUrl_5"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForCielo == 0 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                     </amp-img>
+                  </li>
+                </ul>
+              </div>
+
         <amp-install-serviceworker
           src="/sw.js"
           data-iframe-src="https://amp_install_serviceworker.html"
