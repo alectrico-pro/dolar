@@ -1273,7 +1273,10 @@
 
   <amp-state id="n">
     <script type="application/json">
-    {"nevera": [ {"proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "6", "marca": "Milexus",   "pvp": "370", "comisión": "10", "costo": "360", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "8.8", "marca": "Sandmax", "pvp": "470", "comisión": "10", "costo": "460", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "15", "marca": "Milexus",  "pvp": "820", "comisión": "20", "costo": "800", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "16", "marca": "Milexus",  "pvp": "870", "comisión": "25", "costo": "845", "moneda": "USD", "modo": "1"}], "freezer": [{"proveedor": "5355439564", "pies": "3.5","marca": "Royal", "pvp": "340", "com": "10", "costo": "330", "moneda": "USD", "modo": "1"}] }
+    {
+    "nevera": [ {"proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "6", "marca": "Milexus",   "pvp": "370", "comisión": "10", "costo": "360", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "8.8", "marca": "Sandmax", "pvp": "470", "comisión": "10", "costo": "460", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "15", "marca": "Milexus",  "pvp": "820", "comisión": "20", "costo": "800", "moneda": "USD", "modo": "1"}, {"proveedor": "5355439564", "pies": "16", "marca": "Milexus",  "pvp": "870", "comisión": "25", "costo": "845", "moneda": "USD", "modo": "1"}], 
+    "freezer": [{"proveedor": "5355439564", "pies": "3.5","marca": "Royal", "pvp": "340", "com": "10", "costo": "330", "moneda": "USD", "modo": "1"}]
+    }
     </script>
   </amp-state>
 
@@ -2151,6 +2154,34 @@
                    <p [text]="n.freezer[0].proveedor"></p>
 
                   </div>
+
+                  <div 
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
+                             + cuba.nombre_5"
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "cuba.precio_5">
+                      Llamar
+                    </p>
+
+                    <a class="comision-gallery-button">
+                     <span>
+                       Mensajería Incluída en la Ciudad
+                    </span>
+                   </a>
+
+                   <p [text]="n.nevera[2].marca"></p>
+                   <p [text]="n.nevara[2].proveedor"></p>
+
+                  </div>
+
 
 
                </amp-base-carousel>
