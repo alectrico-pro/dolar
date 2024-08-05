@@ -1273,7 +1273,10 @@
 
   <amp-state id="n">
     <script type="application/json">
-            {"nevera": [ {"proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"}]}
+   {"nevera":
+   [ {"proveedor": "5300024", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"}],
+   [ {"proveedor": "5300001", "pies": "3.5", "marca": "SandMax", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"}]
+   }
     </script>
   </amp-state>
 
@@ -2098,6 +2101,34 @@
 
                    <p [text]="n.nevera[0].marca"></p>
                    <p [text]="m.nevera.a.proveedor"></p>
+
+                  </div>
+
+
+                  <div 
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
+                             + cuba.nombre_5"
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "cuba.precio_5">
+                      Llamar
+                    </p>
+
+                    <a class="comision-gallery-button">
+                     <span>
+                       Mensajería Incluída en la Ciudad
+                    </span>
+                   </a>
+
+                   <p [text]="n.nevera[1].marca"></p>
+                   <p [text]="n.nevera[1].proveedor"></p>
 
                   </div>
 
