@@ -1043,9 +1043,11 @@
      </section>
 
           <div>
+             <h1 [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100)"> USD | 
              <span [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100) * divisa.dolar ">
              </span><span>CUP</h1>
              <p [text]=divisa.dolar></p>
+	     </h1>
           </div>
 
 
