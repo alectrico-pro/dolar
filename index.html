@@ -2129,9 +2129,24 @@
 
                   </div>
 
+                  <div 
+                    role="button"
+                    tabindex="0">
 
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
+                              + n.electro[0].tipo + n.electro[0].marca "
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "n.electro[0].pvp">
+                    </p>
+                   <p [text]="n.electro[2].tipo"></p>
+                   <p [text]="n.electro[2].marca"></p>
+                   <p [text]="n.electro[2].proveedor"></p>
 
-
+                  </div>
 
                </amp-base-carousel>
 
