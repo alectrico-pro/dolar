@@ -981,10 +981,11 @@
   <section amp-access="NOT loggedIn">
       <template amp-access-template type="amp-mustache">
         <div class="ampstart-headerbar flex justify-start items-center top-20">
-        <span [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100) * divisa.dolar ">
+	  <div>
+             <span [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100) * divisa.dolar ">
              </span><span>CUP</h1>  
-        <p [text]=divisa.dolar></p>
-
+             <p [text]=divisa.dolar></p>
+          </div>
 
           <div >
             <amp-base-carousel width="110"  on="slideChange:AMP.setState({ divisa: {dolar: '{{dolar}}'}, selectedCentenaSlide: event.index})"  height="90" layout="fixed" horizontal=false >
