@@ -1042,14 +1042,12 @@
       </template>
      </section>
 
-          <div>
-             <h1 [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100)"> USD | 
-             <span [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100) * divisa.dolar ">
+        <h1> <span [text]="+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100 ">USD |
+             </span>
+        <span [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100) * divisa.dolar ">
              </span><span>CUP</h1>
-             <p [text]=divisa.dolar></p>
-	     </h1>
-          </div>
 
+        <p [text]=divisa.dolar></p>
 
 
 	<small>* Valor de 1 dólar (en CUP: Pesos cubanos). Refresque si no aparece un valor o si quisiera actualizarlo para las últimas 24 horas de promedio. </small>
