@@ -1285,7 +1285,10 @@
      {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "10",  "marca": "Premier", "pvp": "680", "moneda": "USD", "com": "20", "costo": "660", "modo": "2"},
      {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "11",  "marca": "Royal",   "pvp": "840", "moneda": "USD", "com": "20", "costo": "820", "modo": "1"},
      {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "13.5", "marca": "LG",     "pvp": "840", "moneda": "USD", "com": "25", "costo": "815", "modo": "1"},
-     {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "16",  "marca": "Milexus", "pvp": "920", "moneda": "USD", "com": "20", "costo": "900", "modo": "2"}]
+     {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "16",  "marca": "Milexus", "pvp": "920", "moneda": "USD", "com": "20", "costo": "900", "modo": "2"},
+     {"tipo": "Smart-TV", "proveedor": "5355439564", "diagonal": "32", "marca": "Premier", "pvp": "250", "moneda": "USD", "comisión": "10"},
+     {"tipo": "Smart-TV", "proveedor": "5355439564", "diagonal": "40", "marca": "Roku",    "pvp": "360", "moneda": "USD", "comisión": "10"}
+     ]
     }
     </script>
   </amp-state>
@@ -2093,21 +2096,13 @@
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
                      [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
-                             + cuba.nombre_5"
+			      + n.electro[0].tipo + n.electro[0].marca "
                       href = "tel:+5358461012">
                       WhatsApp
                     </a>
-        
                     <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n[0].pvp">
-                      Llamar
+                       [text] = "n.electro[0].pvp">         
                     </p>
-
-                    <a class="comision-gallery-button">
-                     <span>
-                       Mensajería Incluída en la Ciudad
-                    </span>
-                   </a>
                    <p [text]="n.electro[0].tipo"></p>
                    <p [text]="n.electro[0].marca"></p>
                    <p [text]="n.electro[0].proveedor"></p>
@@ -2121,160 +2116,20 @@
 
                     <a class="ampstart-btn caps m2 close-gallery-button"
                      [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
-                             + cuba.nombre_5"
+                              + n.electro[0].tipo + n.electro[0].marca "
                       href = "tel:+5358461012">
                       WhatsApp
                     </a>
-
                     <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.nevera[1].pvp">
-                      Llamar
+                       [text] = "n.electro[0].pvp"> 
                     </p>
-
-                    <a class="comision-gallery-button">
-                     <span>
-                       Mensajería Incluída en la Ciudad
-                    </span>
-                   </a>
-
-                   <p [text]="n.nevera[1].marca"></p>
-                   <p [text]="n.nevera[1].proveedor"></p>
+                   <p [text]="n.electro[1].tipo"></p>
+                   <p [text]="n.electro[1].marca"></p>
+                   <p [text]="n.electro[1].proveedor"></p>
 
                   </div>
 
-                  <div 
-                    role="button"
-                    tabindex="0">
 
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
-                             + cuba.nombre_5"
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.nevera[2].pvp">
-                      Llamar
-                    </p>
-
-                    <a class="comision-gallery-button">
-                     <span>
-                       Mensajería Incluída en la Ciudad
-                    </span>
-                   </a>
-
-                   <p [text]="n.nevera[2].marca"></p>
-                   <p [text]="n.nevera[2].proveedor"></p>
-
-                  </div>
-                  <div 
-                    role="button"
-                    tabindex="0">
-
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
-                             + cuba.nombre_5"
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.nevera[3].pvp">
-                      Llamar
-                    </p>
-
-                    <a class="comision-gallery-button">
-                     <span>
-                       Mensajería Incluída en la Ciudad
-                    </span>
-                   </a>
-
-                   <p [text]="n.nevera[3].marca"></p>
-                   <p [text]="n.nevera[3].proveedor"></p>
-
-                  </div>
-
-                  <div 
-                    role="button"
-                    tabindex="0">
-
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
-                             + cuba.nombre_5"
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.nevera[4].pvp">
-                      Llamar
-                    </p>
-
-                    <a class="comision-gallery-button">
-                     <span>
-                       Mensajería Incluída en la Ciudad
-                    </span>
-                   </a>
-
-                   <p [text]="n.nevera[4].marca"></p>
-                   <p [text]="n.nevera[4].proveedor"></p>
-
-                  </div>
-
-                  <div 
-                    role="button"
-                    tabindex="0">
-
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
-                             + cuba.nombre_5"
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.refrigerador[0].pvp">
-                      Llamar
-                    </p>
-
-                    <a class="comision-gallery-button">
-                     <span>
-                       Mensajería Incluída en la Ciudad
-                    </span>
-                   </a>
-
-                   <p [text]="n.refrigerador[0].marca"></p>
-                   <p [text]="n.refrigerador[0].proveedor"></p>
-
-                  </div>
-
-                  <div
-                    role="button"
-                    tabindex="0">
-
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre '
-                             + cuba.nombre_5"
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.freezer[1].pvp">
-                      Llamar
-                    </p>
-
-                    <a class="comision-gallery-button">
-                     <span>
-                       Mensajería Incluída en la Ciudad
-                    </span>
-                   </a>
-
-                   <p [text]="n.freezer[0].marca"></p>
-                   <p [text]="n.freezer[0].proveedor"></p>
-
-                  </div>
 
 
 
