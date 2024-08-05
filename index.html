@@ -1339,7 +1339,13 @@
     </amp-state>
 
 
-
+<amp-state id="state">
+  <script type="application/json">
+    {
+      items: ['a', 'b', 'c']
+    }
+  </script>
+</amp-state>
 
 <amp-state id="proveedor">
   <script type="application/json">
@@ -2079,11 +2085,11 @@
                     </span>
                    </a>
 
-		   <h1 [text]="marketplace.nevera[0].marca"></h1>
-		   <h1 [text]="marketplace.nevera[1].marca"></h1>
-                   <h1 [text]="marketplace.nevera[2].marca"></h1>
-                   <h1 [text]="marketplace.nevera[3].marca"></h1>
-
+<p [hidden]="!state.items[0]" [text]="state.items[0]"></p>
+<p [hidden]="!state.items[1]" [text]="state.items[1]"></p>
+<p [hidden]="!state.items[2]" [text]="state.items[2]"></p>
+<p [hidden]="!state.items[3]" [text]="state.items[3]"></p>
+<p [hidden]="!state.items[4]" [text]="state.items[4]"></p>
 
                   </div>
 
