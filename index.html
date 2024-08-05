@@ -1265,13 +1265,7 @@
   </script>
 </amp-state>
 
-  <amp-state id="m">
-    <script type="application/json">
-	    {"nevera": {"a": {"proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"}}}
-    </script>
-  </amp-state>
-
-  <amp-state id="n">
+  <amp-state id="ejemplon">
     <script type="application/json">
      {"nevera": [ { "marca": "Milexus"}, { "marca": "Roku"} ] }
     </script>
@@ -1280,13 +1274,13 @@
     <amp-state id="marketplace">
      <script type="application/json">
 {
-"nevera": {
-"0": {"proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"},
-"1": {"proveedor": "5355439564", "pies": "6", "marca": "Milexus",   "pvp": "370", "comisión": "10", "costo": "360", "moneda": "USD", "modo":1},
-["proveedor": "5355439564", "pies": "8.8", "marca": "Sandmax", "pvp": "470", "comisión": "10", "costo": "460", "moneda": "USD", "modo": 1],
-["proveedor": "5355439564", "pies": "15", "marca": "Milexus",  "pvp": "820", "comisión": "20", "costo": "800", "moneda": "USD", "modo":1],
-["proveedor": "5355439564", "pies": "16", "marca": "Milexus",  "pvp": "870", "comisión": "25", "costo": "845", "moneda": "USD", "modo":1]
-},
+"nevera": [
+ {"proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"},
+ {"proveedor": "5355439564", "pies": "6", "marca": "Milexus",   "pvp": "370", "comisión": "10", "costo": "360", "moneda": "USD", "modo": "1",
+ {"proveedor": "5355439564", "pies": "8.8", "marca": "Sandmax", "pvp": "470", "comisión": "10", "costo": "460", "moneda": "USD", "modo": "1"},
+ {"proveedor": "5355439564", "pies": "15", "marca": "Milexus",  "pvp": "820", "comisión": "20", "costo": "800", "moneda": "USD", "modo": "1"},
+{"proveedor": "5355439564", "pies": "16", "marca": "Milexus",  "pvp": "870", "comisión": "25", "costo": "845", "moneda": "USD", "modo": "1"}
+]},
 "freezer": {
 ["proveedor": "5355439564", "pies": "3.5","marca", "Royal", "pvp": "340", "com": "10", "costo": "330", "moneda": "USD", "modo": 1]
 },
@@ -2096,8 +2090,8 @@
                     </span>
                    </a>
 
-                   <p [text]="n.nevera[0].marca"></p>
-                   <p [text]="m.nevera.a.proveedor"></p>
+                   <p [text]="marketplace.nevera[0].marca"></p>
+                   <p [text]="marketplace.nevera[0].proveedor"></p>
 
                   </div>
 
@@ -2124,8 +2118,8 @@
                     </span>
                    </a>
 
-                   <p [text]="n.nevera[1].marca"></p>
-                   <p [text]="n.nevera[1].proveedor"></p>
+                   <p [text]="marketplace.nevera[1].marca"></p>
+                   <p [text]="merketplace.nevera[1].proveedor"></p>
 
                   </div>
 
