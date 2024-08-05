@@ -121,6 +121,7 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
     <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
 
     <link rel="canonical" href="https://santa.store/">
     
@@ -4843,6 +4844,14 @@
     }
   </script>
 </amp-animation>
+
+        <h1> <span [text]="+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100 ">USD |
+             </span>
+        <span [text]="(+selectedUnidadSlide + selectedDecenaSlide * 10 + selectedCentenaSlide * 100) * divisa.dolar ">
+             </span><span>CUP</h1>
+
+        <p [text]=divisa.dolar></p>
+
 
   <section amp-access="NOT loggedIn">
       <template amp-access-template type="amp-mustache">
