@@ -1271,6 +1271,11 @@
     </script>
   </amp-state>
 
+  <amp-state id="n">
+    <script type="application/json">
+            {"nevera": [ {"proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "340", "comisión": "10", "costo": "330", "moneda": "USD", "modo": "1"}]}
+    </script>
+  </amp-state>
 
     <amp-state id="marketplace">
      <script type="application/json">
@@ -2091,7 +2096,8 @@
                     </span>
                    </a>
 
-                   <p [text]="m.nevera.a.marca"></p>
+                   <p [text]="n.nevera[0].marca"></p>
+                   <p [text]="m.nevera.a.proveedor"></p>
 
                   </div>
 
