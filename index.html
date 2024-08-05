@@ -1116,7 +1116,7 @@
 
     <section amp-access="NOT loggedIn">
       <template amp-access-template type="amp-mustache">
-        <div class="ampstart-headerbar flex fixed justify-start items-center top-1">
+        <div class="ampstart-headerbar flex fixed justify-start items-center top-2">
 	  <div flex="1 1 auto">
 	    <amp-base-carousel width="110"  on="slideChange:AMP.setState({ divisa: {dolar: '{{dolar}}'}, selectedCentenaSlide: event.index})"  height="90" layout="fixed" horizontal=false >
                <amp-img src="./img/un_dolar.png" width="120" height="90" alt="100 dólares"></amp-img>
@@ -1181,14 +1181,13 @@
          <amp-carousel id="cielo-carousel"
                   width="500"
                   height="500"
-		  hidden
                   layout="responsive"
                   type="slides"
                   slide=0
                   [slide]="product.selectedSlideForCielo"
                   on="slideChange: AMP.setState({product: {selectedSlide: event.index, selectedSlideForCielo: event.index}})"
                   class="fadeIn"
-                  [hidden]="product.selectedColor != 'cielo'">
+                  [hidden]="product.selectedColor != 'cuba'">
 
 
                   <div 
@@ -1214,8 +1213,8 @@
                    </a>
 
                     <amp-img
-                      src="/img/cielo/proveedor_4_grupo_cielo_slide_0.jpg"
-                      [src]="cuba.imageUrl_5"
+                      src="/img/cuba/p1_sl0_olla_arrocera_hamilton.jpg"
+                     [src]="cuba.imageUrl_0"
                       width="500"
                       height="500"
                       layout="responsive"
