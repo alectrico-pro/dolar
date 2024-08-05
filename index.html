@@ -2199,6 +2199,7 @@
                    <p [text]="n.nevera[3].proveedor"></p>
 
                   </div>
+
                   <div 
                     role="button"
                     tabindex="0">
@@ -2226,6 +2227,32 @@
 
                   </div>
 
+                  <div 
+                    role="button"
+                    tabindex="0">
+
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
+                             + cuba.nombre_5"
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "n.refrigerador[0].pvp">
+                      Llamar
+                    </p>
+
+                    <a class="comision-gallery-button">
+                     <span>
+                       Mensajería Incluída en la Ciudad
+                    </span>
+                   </a>
+
+                   <p [text]="n.refrigerador[0].marca"></p>
+                   <p [text]="n.refrigerador[0].proveedor"></p>
+
+                  </div>
 
                   <div
                     role="button"
