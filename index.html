@@ -2158,6 +2158,36 @@
 		    </figure>
                   </div>
 
+                  <!-- slide 1 -->
+                  <div 
+                    role="button"
+                    tabindex="0">
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre ' 
+                              + n.electro[0].tipo + n.electro[0].marca "
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "n.electro[product.selectedSlide].pvp">
+                    </p>
+                    <p [text]="n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix">
+                    </p>
+                    <figure>
+                            <amp-img
+                              height="500"
+                              on="tap:gallery-lightbox"
+                              role="button"
+                              tabindex="0"
+                              layout="fill"
+                              src="https://unsplash.it/500/400"
+                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"  
+                              alt="">
+                            </amp-img>
+                         <h1> Caption </h1>
+                    </figure>
+                  </div>
+
 
                </amp-base-carousel>
 
