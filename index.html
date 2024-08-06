@@ -1290,7 +1290,7 @@
      {"image": "/img/IMG-20240802-WA0056.jpg","tipo": "Nevera", "proveedor": "5355439564", "pies": "3.5", "marca": "Milexus", "pvp": "320", "comision": "Libre", "costo": "330", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/IMG-20240802-WA", "imagen_idx": "0056", "imagen_postfix": ".jpg" },
      {"image": "/img/IMG-20240730-WA0030.jpg", "tipo": "Nevera", "proveedor": "5355439564", "pies": "6", "marca": "Milexus",   "pvp": "340", "comision": "Free", "costo": "360", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0030", "imagen_postfix": ".jpg" },
      {"image": "/img/IMG-20240724-WA0005.jpg", "tipo": "Nevera", "proveedor": "5355439564", "pies": "8.8", "marca": "Sandmax", "pvp": "470", "comision": "10", "costo": "460", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/IMG-20240724-WA", "imagen_idx": "0005", "imagen_postfix": ".jpg" },
-     {"imagen": "yariadna-nevera-milexus-15pies.jpg","tipo": "Nevera", "proveedor": "5355439564", "pies": "15", "marca": "Milexus",  "pvp": "820", "comision": "20", "costo": "800", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/yariadna-nevera-milexus-", "imagen_idx": "15pies", "imagen_postfix": ".jpg" },
+     {"image": "yariadna-nevera-milexus-15pies.jpg", "tipo": "Nevera", "proveedor": "5355439564", "pies": "15", "marca": "Milexus",  "pvp": "820", "comision": "20", "costo": "800", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/yariadna-nevera-milexus-", "imagen_idx": "15pies", "imagen_postfix": ".jpg" },
      {"tipo": "Nevera", "proveedor": "5355439564", "pies": "16", "marca": "Milexus",  "pvp": "820", "comision": "20", "costo": "800", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/IMG-20240801-WA", "imagen_idx": "0006", "imagen_postfix": ".jpg" },
      {"tipo": "Nevera", "proveedor": "5355439564", "pies": "20", "marca": "Milexus",  "pvp": "910", "comision": "Libre", "costo": "800", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/IMG-20240801-WA", "imagen_idx": "0005", "imagen_postfix": ".jpg" },
      {"tipo": "Freezer", "proveedor": "5355439564", "pies": "3.5","marca": "Royal", "pvp": "340", "comision": "10", "costo": "330", "moneda": "USD", "modo": "1", "imagen_prefix": "/img/IMG-20240802-WA", "imagen_idx": "0031", "imagen_postfix": ".jpg" },
@@ -2193,7 +2193,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="n.electro[1].imagen"
+                              src="n.electro[1].image"
                               alt="">
                             </amp-img>
                     </figure>
@@ -2219,8 +2219,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"  
+                              src="n.electro[2].image"
                               alt="">
                             </amp-img>
                     </figure>
@@ -2246,8 +2245,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"  
+                              src="n.electro[3].image"
                               alt="">
                             </amp-img>
                     </figure>
@@ -2265,7 +2263,7 @@
                       WhatsApp
                     </a>
                     <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.electro[product.selectedSlide].pvp">
+                      [text] = "n.electro[product.selectedSlide].pvp + n.electro[product.selectedSlide].moneda">
                     </p>
                     <figure>
                             <amp-img
@@ -2274,7 +2272,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"  
+                              src="n.electro[4].image"
                               alt="">
                             </amp-img>
                     </figure>
