@@ -1307,7 +1307,7 @@
      {"fecha": "20240722" ,"image": "/img/IMG-20240722-WA0028.jpg", "tipo": "Refrigerador", "proveedor": "5355439564", "pies": "7.4", "marca": "Premier", "pvp": "570", "moneda": "USD", "comision": "10", "costo": "550", "modo": "Comisión Fija", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0028", "imagen_postfix": ".jpg" },
 
 
-     {"fecha": "20240722", "image": "/img/IMG-20240722-WA0017.jpg", "imagen_idx": "0017", "imagen_postfix": ".jpg", "vendido":true, "tipo": "Refrigerador", "proveedor": "5355439564", "pies": "10",  "marca": "Premier", "pvp": "720", "moneda": "USD", "comision": "20", "costo": "680", "modo": "Comisión Libre", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0017", "imagen_postfix": ".jpg" },
+     {"fecha": "20240722", "image": "/img/IMG-20240722-WA0017.jpg", "imagen_idx": "0017", "imagen_postfix": ".jpg", "vendido": "Vendido", "tipo": "Refrigerador", "proveedor": "5355439564", "pies": "10",  "marca": "Premier", "pvp": "720", "moneda": "USD", "comision": "20", "costo": "680", "modo": "Comisión Libre", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0017", "imagen_postfix": ".jpg" },
 
 
      {"fecha": "20240727","image": "/img/IMG-20240727-WA0097.jpg", "tipo": "Refrigerador", "proveedor": "5355439564", "pies": "11",  "marca": "Royal",   "pvp": "840", "moneda": "USD", "comision": "20", "costo": "800", "modo": "Comisión Libre", "imagen_prefix": "/img/IMG-20240727-WA", "imagen_idx": "0097", "imagen_postfix": ".jpg" },
@@ -1350,10 +1350,10 @@
      {"fecha": "20240729", "image": "/img/IMG-20240729-WA0047.jpg", "tipo": "Lavadora-Secadora", "proveedor": "5355439564", "Kg": "14", "marca": "Royal", "pvp": "990", "costo": "950", "moneda": "USD", "comision": "20", "modo": "Comisión Fija", "imagen_prefix": "/img/IMG-20240729-WA", "imagen_idx": "0047", "imagen_postfix": ".jpg" },
 
 
-     {"fecha": "20240730", "image":  "/img/IMG-20240730-WA0031.jpg", "vendido": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1.5", "marca": "Milexus", "pvp": "630", "costo": "610", "modo": "Comisión Fija", "comision": "10", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0031", "imagen_postfix": ".jpg" },
+     {"fecha": "20240730", "image":  "/img/IMG-20240730-WA0031.jpg", "vendido": "Vendido", "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1.5", "marca": "Milexus", "pvp": "630", "costo": "610", "modo": "Comisión Fija", "comision": "10", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0031", "imagen_postfix": ".jpg" },
 
 
-     {"fecha": "20240730","image": "/img/IMG-20240730-WA0032.jpg", "vendido": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1", "marca": "Milexus", "pvp": "440", "costo": "400", "comision": "20", "modo": "Comisión Libre", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0032", "imagen_postfix": ".jpg" },
+     {"fecha": "20240730","image": "/img/IMG-20240730-WA0032.jpg", "vendido": "Vendido", "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1", "marca": "Milexus", "pvp": "440", "costo": "400", "comision": "20", "modo": "Comisión Libre", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0032", "imagen_postfix": ".jpg" },
 
 
      {"fecha": "20240724","image": "/img/IMG-20240724-WA0008.jpg", "tipo": "Horno de Microondas", "proveedor": "5355439564", "marca": "Samsung", "pvp": "220", "costo": "200", "moneda": "USD", "comision": "10", "modo": "Comisión Libre", "imagen_prefix": "/img/IMG-20240724-WA", "imagen_idx": "0008", "imagen_postfix": ".jpg" },
@@ -4209,7 +4209,7 @@
 		 </span> 
 	      </p>
 
-	      </h1><span [hidden]=!n.electro[product.selectedSlide].vendido [text]=Vendido></span></h1>
+	      </h1><span [hidden]=!n.electro[product.selectedSlide].vendido [text]=n.electro[product.selectedSlide].vendido></span></h1>
 	      <p class="price-description"> Seleccionado:
 
 	      <span [text]="n.electro[product.selectedSlide].tipo + ' ' + n.electro[product.selectedSlide].marca + ' ' + n.electro[product.selectedSlide].pvp + '/' + n.electro[product.selectedSlide].comision + ' ' + n.electro[product.selectedSlide].moneda">Nevera Milexus 340/10 USD</span>
