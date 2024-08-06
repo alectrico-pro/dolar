@@ -2193,7 +2193,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="n.electro[1].image"
+                              src="n.electro[1].imagen"
                               alt="">
                             </amp-img>
                     </figure>
@@ -2208,8 +2208,9 @@
                               + n.electro[0].tipo + n.electro[0].marca "
                       href = "tel:+5358461012">
                       WhatsApp
-                    </a>
-                    <p [text]="n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix">
+                   </a>
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                     [text] = "n.electro[product.selectedSlide].pvp + n.electro[product.selectedSlide].moneda">
                     </p>
                     <figure>
                             <amp-img
@@ -2236,7 +2237,7 @@
                       WhatsApp
                     </a>
                     <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.electro[product.selectedSlide].pvp">
+                     [text] = "n.electro[product.selectedSlide].pvp + n.electro[product.selectedSlide].moneda">
                     </p>
                     <figure>
                             <amp-img
