@@ -4246,6 +4246,7 @@
 	      </p>
 
               <p class="price-description"> Seleccionado:
+	      <span [hidden]=!n.electro[product.selectedSlide].agotado> AGOTADO !</span>
 	      <span [text]="n.electro[product.selectedSlide].tipo + ' ' + n.electro[product.selectedSlide].marca + ' ' + n.electro[product.selectedSlide].pvp + '/' + n.electro[product.selectedSlide].comision + ' ' + n.electro[product.selectedSlide].moneda"></span>
               </p>
 
