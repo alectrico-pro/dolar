@@ -1297,7 +1297,7 @@
 {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "7", "marca": "Premier", "pvp": "550", "moneda": "USD", "comision": "10", "costo": "550", "modo": "2", "imagen_prefix": "/img/IMG-20240801-WA", "imagen_idx": "0108", "imagen_postfix": ".jpg" },
 
 {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "7.4", "marca": "Premier", "pvp": "560", "moneda": "USD", "comision": "10", "costo": "550", "modo": "2", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0028", "imagen_postfix": ".jpg" },
-     {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "10",  "marca": "Premier", "pvp": "680", "moneda": "USD", "comision": "Free", "costo": "660", "modo": "2", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0017", "imagen_postfix": ".jpg" },
+     {"vendido":true, "tipo": "Refrigerador", "proveedor": "5355439564", "pies": "10",  "marca": "Premier", "pvp": "680", "moneda": "USD", "comision": "Free", "costo": "660", "modo": "2", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0017", "imagen_postfix": ".jpg" },
      {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "11",  "marca": "Royal",   "pvp": "800", "moneda": "USD", "comision": "Libre", "costo": "820", "modo": "1", "imagen_prefix": "/img/IMG-20240727-WA", "imagen_idx": "0097", "imagen_postfix": ".jpg" },
      {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "13.5", "marca": "LG",     "pvp": "840", "moneda": "USD", "comision": "25", "costo": "815", "modo": "1", "imagen_prefix": "/img/IMG-20240727-WA", "imagen_idx": "0028", "imagen_postfix": ".jpg" },
      {"tipo": "Refrigerador", "proveedor": "5355439564", "pies": "16",  "marca": "Milexus", "pvp": "920", "moneda": "USD", "comision": "20", "costo": "900", "modo": "2", "imagen_prefix": "/img/IMG-20240727-WA", "imagen_idx": "0013", "imagen_postfix": ".jpg" },
@@ -1310,8 +1310,8 @@
      {"tipo": "Secadora", "proveedor": "5355439564", "Kg": "8", "marca": "Royal", "pvp": "580", "moneda": "USD", "comision": "15", "modo": "2", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0019", "imagen_postfix": ".jpg" },
      {"tipo": "Secadora", "proveedor": "5355439564", "Kg": "17", "marca": "Samsung", "pvp": "820", "moneda": "USD", "comision": "20", "modo": "2", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0010", "imagen_postfix": ".jpg" },
      {"tipo": "Lavadora-Secadora", "proveedor": "5355439564", "Kg": "14", "marca": "Royal", "pvp": "990", "moneda": "USD", "comision": "15", "modo": "2"},
-     {"agotado": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1.5", "marca": "Milexus", "pvp": "620", "comision": "10", "moneda": "USD", "imagen_prefix": "/img/agotado", "imagen_idx": "", "imagen_postfix": ".jpg" },
-     {"agotado": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1", "marca": "Milexus", "pvp": "400", "comision": "Free", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0032", "imagen_postfix": ".jpg" },
+     {"vendido": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1.5", "marca": "Milexus", "pvp": "620", "comision": "10", "moneda": "USD", "imagen_prefix": "/img/agotado", "imagen_idx": "", "imagen_postfix": ".jpg" },
+     {"vendido": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1", "marca": "Milexus", "pvp": "400", "comision": "Free", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0032", "imagen_postfix": ".jpg" },
      {"tipo": "Horno de Microondas", "proveedor": "5355439564", "marca": "Samsung", "pvp": "200", "moneda": "USD", "comision": "Libre"},
 {"tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "7.5", "marca": "Milexus", "pvp": "390", "moneda": "USD",  "comision": "10", "imagen_prefix": "/img/IMG-20240727-WA", "imagen_idx": "0025", "imagen_postfix": ".jpg" },
 {"tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "8", "marca": "Milexus", "pvp": "400", "moneda": "USD",  "comision": "20"},
@@ -4245,8 +4245,9 @@
 		 </span> 
 	      </p>
 
-              <p class="price-description"> Seleccionado:
-	      <span [hidden]=!n.electro[product.selectedSlide].agotado> AGOTADO !</span>
+	      </h1><span [hidden]=!n.electro[product.selectedSlide].vendido> ¡VENDIDO !</span></h1>
+	      <p class="price-description"> Seleccionado:
+
 	      <span [text]="n.electro[product.selectedSlide].tipo + ' ' + n.electro[product.selectedSlide].marca + ' ' + n.electro[product.selectedSlide].pvp + '/' + n.electro[product.selectedSlide].comision + ' ' + n.electro[product.selectedSlide].moneda"></span>
               </p>
 
