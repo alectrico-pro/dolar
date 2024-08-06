@@ -4065,6 +4065,10 @@
 			Cerrar
 		      </button>
 
+                      <p class="ampstart-btn caps m2 comision-gallery-button"
+                         [text] = "n.electro[product.selectedSlide].pvp + n.electro[product.selectedSlide].moneda">
+                      </p>
+
 		      <form method   = "POST"
 			action-xhr = "https://www.alectrico.cl/api/v1/electrico/circuitos/deleteElectrodomestico.json"
 			  target    = "_top"
