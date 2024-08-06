@@ -1348,15 +1348,40 @@
 
 
      {"image":  "/img/IMG-20240730-WA0031.jpg", "vendido": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1.5", "marca": "Milexus", "pvp": "620", "comision": "10", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0031", "imagen_postfix": ".jpg" },
+
+
      {"image": "/img/IMG-20240730-WA0032.jpg", "vendido": true, "tipo": "Aire Acondicionado Split", "proveedor": "5355439564", "Tonelada": "1", "marca": "Milexus", "pvp": "400", "comision": "Free", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0032", "imagen_postfix": ".jpg" },
+
+
      {"image": "/img/IMG-20240724-WA0008.jpg", "tipo": "Horno de Microondas", "proveedor": "5355439564", "marca": "Samsung", "pvp": "200", "moneda": "USD", "comision": "Libre", "imagen_prefix": "/img/IMG-20240724-WA", "imagen_idx": "0008", "imagen_postfix": ".jpg" },
+
+
+
 {"image": "/img/IMG-20240727-WA0025.jpg", "tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "7.5", "marca": "Milexus", "pvp": "390", "moneda": "USD",  "comision": "10", "imagen_prefix": "/img/IMG-20240727-WA", "imagen_idx": "0025", "imagen_postfix": ".jpg" },
+
+
+
 {"image": "/img/IMG-20240723-WA0052.jpg", "tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "8", "marca": "Milexus", "pvp": "400", "moneda": "USD",  "comision": "20","imagen_prefix": "/img/IMG-20240723-WA", "imagen_idx": "0052", "imagen_postfix": ".jpg" },
+
+
+
 {"image":  "/img/IMG-20240802-WA0055.jpg", "tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "9", "marca": "Samsung", "pvp": "530", "moneda": "USD",  "comision": "10", "imagen_prefix": "/img/IMG-20240802-WA", "imagen_idx": "0055", "imagen_postfix": ".jpg" },
+
+
+
 {"image": "/img/IMG-20240730-WA0032.jpg", "tipo": "Planta-Eléctrica", "marca": "sin marca", "inverter": "1", "proveedor": "5355439564", "W": "3500", "pvp": "620", "comision": "Free", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0032", "imagen_postfix": ".jpg" },
+
+
+
 {"image": "/img/IMG-20240724-WA0011.jpg", "tipo": "Planta-Eléctrica", "marca": "SACO", "no-inverter": "1", "proveedor": "5355439564", "W": "800", "pvp": "250", "comision": "20", "modo": "2", "moneda": "USD", "imagen_prefix": "/img/IMG-20240724-WA", "imagen_idx": "0011", "imagen_postfix": ".jpg" },
+
+
 {"image":  "/img/IMG-20240722-WA0016.jpg", "tipo": "Planta-Eléctrica",  "marca": "Mas","no-inverter": "1", "proveedor": "5355439564", "W": "1200", "pvp": "450", "comision": "20", "modo": "2", "moneda": "USD", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0016", "imagen_postfix": ".jpg" },
+
+
 {"image": "/img/IMG-20240722-WA0033.jpg", "tipo": "Calentador-eléctrico", "litros": "50", "marca": "Eko", "pvp": "360", "comision": "10", "moneda": "USD", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0033", "imagen_postfix": ".jpg" },
+
+
 {"image": "/img/IMG-20240723-WA0053.jpg", "tipo": "Ventilador-recargable", "marca": "Seco", "pvp": "65", "moneda": "USD", "comision": "2", "minimo": "10", "imagen_prefix": "/img/IMG-20240723-WA", "imagen_idx": "0053", "imagen_postfix": ".jpg" }
      ]
     }
@@ -2786,62 +2811,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
-                              alt="">
-                            </amp-img>
-                    </figure>
-                  </div>
-
-		  <!-- slide 21 -->
-                  <div
-                    role="button"
-                    tabindex="0">
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre '
-                              + n.electro[0].tipo + n.electro[0].marca "
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.electro[product.selectedSlide].pvp">
-                    </p>
-                    <figure>
-                            <amp-img
-                              height="500"
-                              on="tap:gallery-lightbox"
-                              role="button"
-                              tabindex="0"
-                              layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
-                              alt="">
-                            </amp-img>
-                    </figure>
-                  </div>
-
-                  <!-- slide 22 -->
-                  <div
-                    role="button"
-                    tabindex="0">
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre '
-                              + n.electro[0].tipo + n.electro[0].marca "
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.electro[product.selectedSlide].pvp">
-                    </p>
-                    <figure>
-                            <amp-img
-                              height="500"
-                              on="tap:gallery-lightbox"
-                              role="button"
-                              tabindex="0"
-                              layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240730-WA0031.jpg"
                               alt="">
                             </amp-img>
                     </figure>
@@ -2867,14 +2837,13 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240730-WA0032.jpg"
                               alt="">
                             </amp-img>
                     </figure>
                   </div>
 
-		  <!-- slide 24 -->
+                  <!-- slide 24 -->
                   <div
                     role="button"
                     tabindex="0">
@@ -2894,8 +2863,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240724-WA0008.jpg"
                               alt="">
                             </amp-img>
                     </figure>
@@ -2921,8 +2889,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240727-WA0025.jpg",
                               alt="">
                             </amp-img>
                     </figure>
@@ -2948,8 +2915,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240723-WA0052.jpg"
                               alt="">
                             </amp-img>
                     </figure>
@@ -2975,8 +2941,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240802-WA0055.jpg"
                               alt="">
                             </amp-img>
                     </figure>
@@ -3002,8 +2967,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240730-WA0032.jpg"
                               alt="">
                             </amp-img>
                     </figure>
@@ -3029,15 +2993,13 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240724-WA0011.jpg"
                               alt="">
                             </amp-img>
                     </figure>
                   </div>
 
-
-                  <!-- slide 30 -->
+		  <!-- slide 30 -->
                   <div
                     role="button"
                     tabindex="0">
@@ -3057,8 +3019,60 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
+			      src="/img/IMG-20240722-WA0016.jpg"
+                              alt="">
+                            </amp-img>
+                    </figure>
+                  </div>
+
+		  <!-- slide 31 -->
+                  <div
+                    role="button"
+                    tabindex="0">
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre '
+                              + n.electro[0].tipo + n.electro[0].marca "
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "n.electro[product.selectedSlide].pvp">
+                    </p>
+                    <figure>
+                            <amp-img
+                              height="500"
+                              on="tap:gallery-lightbox"
+                              role="button"
+                              tabindex="0"
+                              layout="fill"
+			      src="/img/IMG-20240722-WA0033.jpg"
+                              alt="">
+                            </amp-img>
+                    </figure>
+                  </div>
+
+
+                  <!-- slide 32 -->
+                  <div
+                    role="button"
+                    tabindex="0">
+                    <a class="ampstart-btn caps m2 close-gallery-button"
+                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre '
+                              + n.electro[0].tipo + n.electro[0].marca "
+                      href = "tel:+5358461012">
+                      WhatsApp
+                    </a>
+                    <p class="ampstart-btn caps m2 comision-gallery-button"
+                       [text] = "n.electro[product.selectedSlide].pvp">
+                    </p>
+                    <figure>
+                            <amp-img
+                              height="500"
+                              on="tap:gallery-lightbox"
+                              role="button"
+                              tabindex="0"
+                              layout="fill"
+			      src="/img/IMG-20240723-WA0053.jpg"
                               alt="">
                             </amp-img>
                     </figure>
