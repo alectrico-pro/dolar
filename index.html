@@ -2089,13 +2089,6 @@
                   class="fadeIn"
                   [hidden]="product.selectedColor != 'cielo'">
 
-               <amp-img src="./img/un_dolar.png" [src]= n.electro[product.selectedSlide].imagen alt=""></amp-img>
-               <amp-img src="./img/un_dolar.png" [src]= n.electro[product.selectedSlide].imagen alt=""></amp-img>
-               <amp-img src="./img/un_dolar.png" [src]= n.electro[product.selectedSlide].imagen alt=""></amp-img>
-               <amp-img src="./img/un_dolar.png" [src]= n.electro[product.selectedSlide].imagen alt=""></amp-img>
-
-
-
                   <div 
                     role="button"
                     tabindex="0">
@@ -2127,11 +2120,10 @@
                       WhatsApp
                     </a>
                     <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.electro[0].pvp"> 
+                       [text] = "n.electro[product.selectedSlide].pvp"> 
                     </p>
-                   <p [text]="n.electro[1].tipo"></p>
-                   <p [text]="n.electro[1].marca"></p>
-                   <p [text]="n.electro[1].proveedor"></p>
+
+		    <amp-img width="500" height="500" src="./img/un_dolar.png" [src]= n.electro[product.selectedSlide].imagen  alt=""></amp-img>
 
                   </div>
 
