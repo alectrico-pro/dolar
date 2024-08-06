@@ -2167,7 +2167,6 @@
 			      tabindex="0"
 			      layout="fill"
 			      src="/img/IMG-20240802-WA0056.jpg"
-			      [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"  
 			      alt="">
 			    </amp-img>
 		    </figure>
@@ -2184,7 +2183,7 @@
                       WhatsApp
                     </a>
                     <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.electro[product.selectedSlide].pvp">
+	               [text] = "n.electro[product.selectedSlide].pvp + n.electro[product.selectedSlide].moneda">
                     </p>
                     <figure>
                             <amp-img
@@ -2219,7 +2218,7 @@
                               role="button"
                               tabindex="0"
                               layout="fill"
-                              src="n.electro[2].image"
+                              src="/img/IMG-20240724-WA0005.jpg"
                               alt="">
                             </amp-img>
                     </figure>
