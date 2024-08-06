@@ -1316,7 +1316,6 @@
 {"tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "7.5", "marca": "Milexus", "pvp": "390", "moneda": "USD",  "comision": "10", "imagen_prefix": "/img/IMG-20240727-WA", "imagen_idx": "0025", "imagen_postfix": ".jpg" },
 {"tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "8", "marca": "Milexus", "pvp": "400", "moneda": "USD",  "comision": "20","imagen_prefix": "/img/IMG-20240723-WA", "imagen_idx": "0052", "imagen_postfix": ".jpg" },
 {"tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "9", "marca": "Samsung", "pvp": "530", "moneda": "USD",  "comision": "10", "imagen_prefix": "/img/IMG-20240802-WA", "imagen_idx": "0055", "imagen_postfix": ".jpg" },
-{"tipo": "Lavadora-Automática", "proveedor": "5355439564", "Kg": "10.5", "marca": "Royal" , "pvp": "340", "moneda": "USD",  "comision": "15"},
 {"tipo": "Planta-Eléctrica", "marca": "sin marca", "inverter": "1", "proveedor": "5355439564", "W": "3500", "pvp": "620", "comision": "Free", "moneda": "USD", "imagen_prefix": "/img/IMG-20240730-WA", "imagen_idx": "0032", "imagen_postfix": ".jpg" },
 {"tipo": "Planta-Eléctrica", "marca": "SACO", "no-inverter": "1", "proveedor": "5355439564", "W": "800", "pvp": "250", "comision": "20", "modo": "2", "moneda": "USD", "imagen_prefix": "/img/IMG-20240724-WA", "imagen_idx": "0011", "imagen_postfix": ".jpg" },
 {"tipo": "Planta-Eléctrica",  "marca": "Mas","no-inverter": "1", "proveedor": "5355439564", "W": "1200", "pvp": "450", "comision": "20", "modo": "2", "moneda": "USD", "imagen_prefix": "/img/IMG-20240722-WA", "imagen_idx": "0016", "imagen_postfix": ".jpg" },
@@ -3048,35 +3047,6 @@
                             </amp-img>
                     </figure>
                   </div>
-
-		  <!-- slide 31 -->
-                  <div
-                    role="button"
-                    tabindex="0">
-                    <a class="ampstart-btn caps m2 close-gallery-button"
-                     [href]= "'https://api.whatsapp.com/send?phone=' + proveedor.p4.fono + '&text=Hola podemos hablar sobre '
-                              + n.electro[0].tipo + n.electro[0].marca "
-                      href = "tel:+5358461012">
-                      WhatsApp
-                    </a>
-                    <p class="ampstart-btn caps m2 comision-gallery-button"
-                       [text] = "n.electro[product.selectedSlide].pvp">
-                    </p>
-                    <figure>
-                            <amp-img
-                              height="500"
-                              on="tap:gallery-lightbox"
-                              role="button"
-                              tabindex="0"
-                              layout="fill"
-                              src="https://unsplash.it/500/400"
-                              [src]= "n.electro[product.selectedSlide].imagen_prefix+n.electro[product.selectedSlide].imagen_idx+n.electro[product.selectedSlide].imagen_postfix"
-                              alt="">
-                            </amp-img>
-                    </figure>
-                  </div>
-
-
 
                </amp-base-carousel>
 
