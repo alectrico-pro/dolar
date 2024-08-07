@@ -26,24 +26,6 @@
 
 
 
-<script id="local-storage-script" type="text/plain" target="amp-script">
-  const submit = document.getElementById('username-submit');
-  const input = document.getElementById('username-input');
-  const display = document.getElementById('username-display');
-
-  const oldUsername = localStorage.getItem('username');
-  display.textContent = oldUsername ? oldUsername : '(not set)';
-
-  function setUsername() {
-    const newUsername = input.value;
-    localStorage.setItem('username', newUsername);
-    display.textContent = newUsername;
-  }
-
-  submit.addEventListener('click', setUsername);
-</script>
-
-
     <script id="inicial" type='application/ld+json'>
     { 
      "invisible" : false
@@ -4260,6 +4242,23 @@
                 on = "submit-success:carrusel-list.refresh,cart-list.refresh;submit-error:carrusel-list.refresh,cart-list.refresh,carrusel-list.show,boton-login.show"
 
 	      -->
+
+<script id="local-storage-script" type="text/plain" target="amp-script">
+  const submit = document.getElementById('username-submit');
+  const input = document.getElementById('username-input');
+  const display = document.getElementById('username-display');
+
+  const oldUsername = localStorage.getItem('username');
+  display.textContent = oldUsername ? oldUsername : '(not set)';
+
+  function setUsername() {
+    const newUsername = input.value;
+    localStorage.setItem('username', newUsername);
+    display.textContent = newUsername;
+  }
+
+  submit.addEventListener('click', setUsername);
+</script>
 
 <amp-script layout="fixed-height" script="local-storage-script" height="110" class="sample">
   <div>
