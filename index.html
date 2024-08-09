@@ -4101,6 +4101,7 @@
 		      </button>
 
                       <p class="ampstart-btn caps m2 comision-gallery-button"
+			 [hidden] = "n.electro[product.selectedSlide].modo == 'Comisión Libre'"
                          [text] = "n.electro[product.selectedSlide].pvp + n.electro[product.selectedSlide].moneda">320 USD
                       </p>
 
